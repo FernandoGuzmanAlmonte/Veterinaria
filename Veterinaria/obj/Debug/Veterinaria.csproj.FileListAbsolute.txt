@@ -1,0 +1,26 @@
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojResolveAssemblyReference.cache
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.InicioDeSesion.resources
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.Cache
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MainForm.resources
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuMascotas.resources
+C:\Users\Galmonte\Documents\SharpDevelop Projects\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuUsuarios.resources
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.InicioDeSesion.resources
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MainForm.resources
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuMascotas.resources
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuUsuarios.resources
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.Cache
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CopyComplete
+C:\Users\Galmonte\Desktop\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
