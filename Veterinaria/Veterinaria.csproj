@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
     <ProjectGuid>{481CFAB8-BE47-47B8-A08C-4903A685909C}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -8,8 +8,9 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Veterinaria</RootNamespace>
     <AssemblyName>Veterinaria</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -30,12 +31,22 @@
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52">
       <HintPath>..\..\Fernando\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
@@ -54,6 +65,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMascotas.cs" />
+    <Compile Include="AdminUsuario.cs" />
+    <Compile Include="DAOMascota.cs" />
+    <Compile Include="DAOUsuario.cs" />
     <Compile Include="InicioDeSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +81,7 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mascota.cs" />
     <Compile Include="MenuMascotas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +104,7 @@
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -109,6 +126,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

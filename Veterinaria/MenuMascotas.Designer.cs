@@ -65,28 +65,26 @@ namespace Veterinaria
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label LabelConsultaEdad;
 		private System.Windows.Forms.Label LabelConsultaRaza;
-		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.Label label15;
-		private System.Windows.Forms.Label label14;
+		private System.Windows.Forms.Label LabelConsultaEnfermedad;
+		private System.Windows.Forms.Label LabelConsultaDuenio;
+		private System.Windows.Forms.Label LabelConsultaEstatura;
+		private System.Windows.Forms.Label LabelConsultaPeso;
 		private System.Windows.Forms.Button ButtonBuscarDeConsultar;
 		private System.Windows.Forms.Button ButtonBuscarDeModificar;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox TextBoxIDModificar;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.Label label19;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.TextBox textBox8;
-		private System.Windows.Forms.TextBox textBox9;
+		private System.Windows.Forms.TextBox TextBoxEnfermedadModificar;
+		private System.Windows.Forms.TextBox TextBoxNombreDuenioModificar;
+		private System.Windows.Forms.TextBox TextBoxEstaturaModificar;
+		private System.Windows.Forms.TextBox TextBoxPesoModificar;
+		private System.Windows.Forms.TextBox TextBoxEdadModificar;
+		private System.Windows.Forms.TextBox TextBoxRazaModificar;
+		private System.Windows.Forms.TextBox TextBoxEspecieModificar;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.Label label21;
-		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.Label label23;
 		private System.Windows.Forms.Label label24;
 		private System.Windows.Forms.Label label25;
@@ -94,20 +92,19 @@ namespace Veterinaria
 		private System.Windows.Forms.Label label27;
 		private System.Windows.Forms.Label label28;
 		private System.Windows.Forms.Label label29;
-		private System.Windows.Forms.Label label30;
 		private System.Windows.Forms.Button ButtonLimpiarDeModificar;
 		private System.Windows.Forms.Button ButtonActualizar;
-		private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.TextBox textBox10;
+		private System.Windows.Forms.Button BotonConsultarIDEliminar;
+		private System.Windows.Forms.TextBox TextBoxIDEliminar;
 		private System.Windows.Forms.Label label31;
 		private System.Windows.Forms.Label label32;
-		private System.Windows.Forms.Label label33;
-		private System.Windows.Forms.Label label34;
-		private System.Windows.Forms.Label label35;
-		private System.Windows.Forms.Label label36;
-		private System.Windows.Forms.Label label37;
-		private System.Windows.Forms.Label label38;
-		private System.Windows.Forms.Label label39;
+		private System.Windows.Forms.Label LabelEliminarEnfermedad;
+		private System.Windows.Forms.Label LabelEliminarNombreDuenio;
+		private System.Windows.Forms.Label LabelEliminarEstatura;
+		private System.Windows.Forms.Label LabelEliminarPeso;
+		private System.Windows.Forms.Label LabelEliminarEdad;
+		private System.Windows.Forms.Label LabelEliminarRaza;
+		private System.Windows.Forms.Label LabelEliminarEspecie;
 		private System.Windows.Forms.Label label40;
 		private System.Windows.Forms.Label label41;
 		private System.Windows.Forms.Label label42;
@@ -118,8 +115,7 @@ namespace Veterinaria
 		private System.Windows.Forms.Label label47;
 		private System.Windows.Forms.Button ButtonBorrar;
 		private System.Windows.Forms.Label label48;
-		private System.Windows.Forms.DataGridView dataGridView1;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button BotonListarMascotas;
 		private System.Windows.Forms.PictureBox pictureBox2;
 		private System.Windows.Forms.Button ButtonPowerOff;
 		private System.Windows.Forms.Button ButtonSalir;
@@ -149,12 +145,22 @@ namespace Veterinaria
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuMascotas));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TabuladorABC = new System.Windows.Forms.TabControl();
             this.PestañaInicio = new System.Windows.Forms.TabPage();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
+            this.ButtonModificar2 = new WindowsFormsApplication1.RoundButton();
+            this.ButtonAgregar2 = new WindowsFormsApplication1.RoundButton();
+            this.ButtonListar2 = new WindowsFormsApplication1.RoundButton();
+            this.ButtonEliminar2 = new WindowsFormsApplication1.RoundButton();
+            this.ButtonConsultar2 = new WindowsFormsApplication1.RoundButton();
             this.PestañaAgregar = new System.Windows.Forms.TabPage();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.TextBoxAgregarEnfermedad = new System.Windows.Forms.TextBox();
             this.TextBoxAgregarDueño = new System.Windows.Forms.TextBox();
             this.TextBoxAgregarEstatura = new System.Windows.Forms.TextBox();
@@ -177,12 +183,16 @@ namespace Veterinaria
             this.LabelAgregarEspecie = new System.Windows.Forms.Label();
             this.LabelAgregarNombre = new System.Windows.Forms.Label();
             this.PestañaConsultar = new System.Windows.Forms.TabPage();
-            this.ButtonBuscarDeConsultar = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.ButtonBuscarDeConsultar = new System.Windows.Forms.Button();
+            this.LabelConsultaEnfermedad = new System.Windows.Forms.Label();
+            this.LabelConsultaDuenio = new System.Windows.Forms.Label();
+            this.LabelConsultaEstatura = new System.Windows.Forms.Label();
+            this.LabelConsultaPeso = new System.Windows.Forms.Label();
+            this.LabelConsultaEdad = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
             this.LabelConsultaRaza = new System.Windows.Forms.Label();
             this.LabelConsultaEspecie = new System.Windows.Forms.Label();
             this.TextBoxConsultaID = new System.Windows.Forms.TextBox();
@@ -193,20 +203,24 @@ namespace Veterinaria
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.PestañaModificar = new System.Windows.Forms.TabPage();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
             this.ButtonActualizar = new System.Windows.Forms.Button();
             this.ButtonLimpiarDeModificar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
+            this.TextBoxEnfermedadModificar = new System.Windows.Forms.TextBox();
+            this.TextBoxNombreDuenioModificar = new System.Windows.Forms.TextBox();
+            this.TextBoxEstaturaModificar = new System.Windows.Forms.TextBox();
+            this.TextBoxPesoModificar = new System.Windows.Forms.TextBox();
+            this.TextBoxEdadModificar = new System.Windows.Forms.TextBox();
+            this.TextBoxRazaModificar = new System.Windows.Forms.TextBox();
+            this.TextBoxEspecieModificar = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -217,21 +231,23 @@ namespace Veterinaria
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.ButtonBuscarDeModificar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextBoxIDModificar = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.PestañaEliminar = new System.Windows.Forms.TabPage();
-            this.ButtonBorrar = new System.Windows.Forms.Button();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
+            this.ButtonBorrar = new System.Windows.Forms.Button();
+            this.label47 = new System.Windows.Forms.Label();
+            this.LabelEliminarEnfermedad = new System.Windows.Forms.Label();
+            this.LabelEliminarNombreDuenio = new System.Windows.Forms.Label();
+            this.LabelEliminarEstatura = new System.Windows.Forms.Label();
+            this.LabelEliminarPeso = new System.Windows.Forms.Label();
+            this.LabelEliminarEdad = new System.Windows.Forms.Label();
+            this.LabelEliminarRaza = new System.Windows.Forms.Label();
+            this.LabelEliminarEspecie = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
@@ -239,14 +255,17 @@ namespace Veterinaria
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.BotonConsultarIDEliminar = new System.Windows.Forms.Button();
+            this.TextBoxIDEliminar = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.PestañaListar = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DataGridListar = new ns1.BunifuCustomDataGrid();
+            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNombreDuenio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnRaza = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BotonListarMascotas = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.PanelDeDesplazamiento = new System.Windows.Forms.Panel();
             this.ButtonListar = new System.Windows.Forms.Button();
@@ -263,11 +282,6 @@ namespace Veterinaria
             this.ButtonMinimizar = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
-            this.ButtonModificar2 = new WindowsFormsApplication1.RoundButton();
-            this.ButtonAgregar2 = new WindowsFormsApplication1.RoundButton();
-            this.ButtonListar2 = new WindowsFormsApplication1.RoundButton();
-            this.ButtonEliminar2 = new WindowsFormsApplication1.RoundButton();
-            this.ButtonConsultar2 = new WindowsFormsApplication1.RoundButton();
             this.bunifuDragControl2 = new ns1.BunifuDragControl(this.components);
             this.bunifuDragControl3 = new ns1.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -278,7 +292,7 @@ namespace Veterinaria
             this.PestañaModificar.SuspendLayout();
             this.PestañaEliminar.SuspendLayout();
             this.PestañaListar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridListar)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -304,7 +318,7 @@ namespace Veterinaria
             this.TabuladorABC.Controls.Add(this.PestañaModificar);
             this.TabuladorABC.Controls.Add(this.PestañaEliminar);
             this.TabuladorABC.Controls.Add(this.PestañaListar);
-            this.TabuladorABC.Location = new System.Drawing.Point(187, 128);
+            this.TabuladorABC.Location = new System.Drawing.Point(180, 128);
             this.TabuladorABC.Name = "TabuladorABC";
             this.TabuladorABC.SelectedIndex = 0;
             this.TabuladorABC.Size = new System.Drawing.Size(750, 468);
@@ -346,9 +360,92 @@ namespace Veterinaria
             this.label49.TabIndex = 3;
             this.label49.Text = "La vista de cualquier animal me regocija al punto y me ensancha el corazon";
             // 
+            // ButtonModificar2
+            // 
+            this.ButtonModificar2.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ButtonModificar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonModificar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ButtonModificar2.FlatAppearance.BorderSize = 0;
+            this.ButtonModificar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonModificar2.ForeColor = System.Drawing.Color.BlueViolet;
+            this.ButtonModificar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonModificar2.Image")));
+            this.ButtonModificar2.Location = new System.Drawing.Point(522, 27);
+            this.ButtonModificar2.Name = "ButtonModificar2";
+            this.ButtonModificar2.Size = new System.Drawing.Size(89, 83);
+            this.ButtonModificar2.TabIndex = 2;
+            this.ButtonModificar2.UseVisualStyleBackColor = false;
+            this.ButtonModificar2.Click += new System.EventHandler(this.ButtonModificar2_Click);
+            // 
+            // ButtonAgregar2
+            // 
+            this.ButtonAgregar2.BackColor = System.Drawing.Color.Orange;
+            this.ButtonAgregar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonAgregar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ButtonAgregar2.FlatAppearance.BorderSize = 0;
+            this.ButtonAgregar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonAgregar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ButtonAgregar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonAgregar2.Image")));
+            this.ButtonAgregar2.Location = new System.Drawing.Point(418, 41);
+            this.ButtonAgregar2.Name = "ButtonAgregar2";
+            this.ButtonAgregar2.Size = new System.Drawing.Size(89, 83);
+            this.ButtonAgregar2.TabIndex = 2;
+            this.ButtonAgregar2.UseVisualStyleBackColor = false;
+            this.ButtonAgregar2.Click += new System.EventHandler(this.ButtonAgregar2_Click);
+            // 
+            // ButtonListar2
+            // 
+            this.ButtonListar2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonListar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonListar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ButtonListar2.FlatAppearance.BorderSize = 0;
+            this.ButtonListar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonListar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ButtonListar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonListar2.Image")));
+            this.ButtonListar2.Location = new System.Drawing.Point(314, 27);
+            this.ButtonListar2.Name = "ButtonListar2";
+            this.ButtonListar2.Size = new System.Drawing.Size(89, 83);
+            this.ButtonListar2.TabIndex = 2;
+            this.ButtonListar2.UseVisualStyleBackColor = false;
+            this.ButtonListar2.Click += new System.EventHandler(this.ButtonListar2_Click);
+            // 
+            // ButtonEliminar2
+            // 
+            this.ButtonEliminar2.BackColor = System.Drawing.Color.Crimson;
+            this.ButtonEliminar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonEliminar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ButtonEliminar2.FlatAppearance.BorderSize = 0;
+            this.ButtonEliminar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonEliminar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ButtonEliminar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonEliminar2.Image")));
+            this.ButtonEliminar2.Location = new System.Drawing.Point(210, 41);
+            this.ButtonEliminar2.Name = "ButtonEliminar2";
+            this.ButtonEliminar2.Size = new System.Drawing.Size(89, 83);
+            this.ButtonEliminar2.TabIndex = 2;
+            this.ButtonEliminar2.UseVisualStyleBackColor = false;
+            this.ButtonEliminar2.Click += new System.EventHandler(this.ButtonEliminar2_Click);
+            // 
+            // ButtonConsultar2
+            // 
+            this.ButtonConsultar2.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.ButtonConsultar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonConsultar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.ButtonConsultar2.FlatAppearance.BorderSize = 0;
+            this.ButtonConsultar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonConsultar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.ButtonConsultar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonConsultar2.Image")));
+            this.ButtonConsultar2.Location = new System.Drawing.Point(106, 27);
+            this.ButtonConsultar2.Name = "ButtonConsultar2";
+            this.ButtonConsultar2.Size = new System.Drawing.Size(89, 83);
+            this.ButtonConsultar2.TabIndex = 2;
+            this.ButtonConsultar2.UseVisualStyleBackColor = false;
+            this.ButtonConsultar2.Click += new System.EventHandler(this.ButtonConsultar2_Click);
+            // 
             // PestañaAgregar
             // 
             this.PestañaAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.PestañaAgregar.Controls.Add(this.label15);
+            this.PestañaAgregar.Controls.Add(this.label14);
+            this.PestañaAgregar.Controls.Add(this.label5);
             this.PestañaAgregar.Controls.Add(this.TextBoxAgregarEnfermedad);
             this.PestañaAgregar.Controls.Add(this.TextBoxAgregarDueño);
             this.PestañaAgregar.Controls.Add(this.TextBoxAgregarEstatura);
@@ -376,6 +473,33 @@ namespace Veterinaria
             this.PestañaAgregar.Size = new System.Drawing.Size(742, 437);
             this.PestañaAgregar.TabIndex = 0;
             this.PestañaAgregar.Text = "PestañaAgregar";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(231, 307);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(32, 18);
+            this.label15.TabIndex = 17;
+            this.label15.Text = "cm";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(231, 262);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(27, 18);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "kg";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(231, 217);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 18);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "años";
             // 
             // TextBoxAgregarEnfermedad
             // 
@@ -455,6 +579,7 @@ namespace Veterinaria
             this.ButtonLimpiarDeAgregar.TabIndex = 8;
             this.ButtonLimpiarDeAgregar.Text = "Limpiar";
             this.ButtonLimpiarDeAgregar.UseVisualStyleBackColor = false;
+            this.ButtonLimpiarDeAgregar.Click += new System.EventHandler(this.ButtonLimpiarDeAgregar_Click);
             // 
             // ButtonGuardar
             // 
@@ -467,6 +592,7 @@ namespace Veterinaria
             this.ButtonGuardar.TabIndex = 8;
             this.ButtonGuardar.Text = "Guardar";
             this.ButtonGuardar.UseVisualStyleBackColor = false;
+            this.ButtonGuardar.Click += new System.EventHandler(this.ButtonGuardar_Click);
             // 
             // label1
             // 
@@ -561,12 +687,16 @@ namespace Veterinaria
             // PestañaConsultar
             // 
             this.PestañaConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.PestañaConsultar.Controls.Add(this.ButtonBuscarDeConsultar);
-            this.PestañaConsultar.Controls.Add(this.label17);
             this.PestañaConsultar.Controls.Add(this.label16);
-            this.PestañaConsultar.Controls.Add(this.label15);
-            this.PestañaConsultar.Controls.Add(this.label14);
-            this.PestañaConsultar.Controls.Add(this.label5);
+            this.PestañaConsultar.Controls.Add(this.label17);
+            this.PestañaConsultar.Controls.Add(this.label30);
+            this.PestañaConsultar.Controls.Add(this.ButtonBuscarDeConsultar);
+            this.PestañaConsultar.Controls.Add(this.LabelConsultaEnfermedad);
+            this.PestañaConsultar.Controls.Add(this.LabelConsultaDuenio);
+            this.PestañaConsultar.Controls.Add(this.LabelConsultaEstatura);
+            this.PestañaConsultar.Controls.Add(this.LabelConsultaPeso);
+            this.PestañaConsultar.Controls.Add(this.LabelConsultaEdad);
+            this.PestañaConsultar.Controls.Add(this.label51);
             this.PestañaConsultar.Controls.Add(this.LabelConsultaRaza);
             this.PestañaConsultar.Controls.Add(this.LabelConsultaEspecie);
             this.PestañaConsultar.Controls.Add(this.TextBoxConsultaID);
@@ -577,6 +707,7 @@ namespace Veterinaria
             this.PestañaConsultar.Controls.Add(this.label8);
             this.PestañaConsultar.Controls.Add(this.label9);
             this.PestañaConsultar.Controls.Add(this.label10);
+            this.PestañaConsultar.Controls.Add(this.label39);
             this.PestañaConsultar.Controls.Add(this.label11);
             this.PestañaConsultar.Controls.Add(this.label12);
             this.PestañaConsultar.Controls.Add(this.label13);
@@ -586,6 +717,33 @@ namespace Veterinaria
             this.PestañaConsultar.Size = new System.Drawing.Size(742, 437);
             this.PestañaConsultar.TabIndex = 1;
             this.PestañaConsultar.Text = "PestañaConsultar";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(285, 364);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(32, 18);
+            this.label16.TabIndex = 44;
+            this.label16.Text = "cm";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(285, 319);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(27, 18);
+            this.label17.TabIndex = 45;
+            this.label17.Text = "kg";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(285, 274);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(43, 18);
+            this.label30.TabIndex = 46;
+            this.label30.Text = "años";
             // 
             // ButtonBuscarDeConsultar
             // 
@@ -598,51 +756,61 @@ namespace Veterinaria
             this.ButtonBuscarDeConsultar.TabIndex = 43;
             this.ButtonBuscarDeConsultar.Text = "Buscar";
             this.ButtonBuscarDeConsultar.UseVisualStyleBackColor = false;
+            this.ButtonBuscarDeConsultar.Click += new System.EventHandler(this.ButtonBuscarDeConsultar_Click);
             // 
-            // label17
+            // LabelConsultaEnfermedad
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(515, 229);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(20, 18);
-            this.label17.TabIndex = 42;
-            this.label17.Text = "...";
+            this.LabelConsultaEnfermedad.AutoSize = true;
+            this.LabelConsultaEnfermedad.Location = new System.Drawing.Point(515, 229);
+            this.LabelConsultaEnfermedad.Name = "LabelConsultaEnfermedad";
+            this.LabelConsultaEnfermedad.Size = new System.Drawing.Size(20, 18);
+            this.LabelConsultaEnfermedad.TabIndex = 42;
+            this.LabelConsultaEnfermedad.Text = "...";
             // 
-            // label16
+            // LabelConsultaDuenio
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(515, 184);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(20, 18);
-            this.label16.TabIndex = 41;
-            this.label16.Text = "...";
+            this.LabelConsultaDuenio.AutoSize = true;
+            this.LabelConsultaDuenio.Location = new System.Drawing.Point(515, 184);
+            this.LabelConsultaDuenio.Name = "LabelConsultaDuenio";
+            this.LabelConsultaDuenio.Size = new System.Drawing.Size(20, 18);
+            this.LabelConsultaDuenio.TabIndex = 41;
+            this.LabelConsultaDuenio.Text = "...";
             // 
-            // label15
+            // LabelConsultaEstatura
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(117, 364);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(20, 18);
-            this.label15.TabIndex = 40;
-            this.label15.Text = "...";
+            this.LabelConsultaEstatura.AutoSize = true;
+            this.LabelConsultaEstatura.Location = new System.Drawing.Point(117, 364);
+            this.LabelConsultaEstatura.Name = "LabelConsultaEstatura";
+            this.LabelConsultaEstatura.Size = new System.Drawing.Size(20, 18);
+            this.LabelConsultaEstatura.TabIndex = 40;
+            this.LabelConsultaEstatura.Text = "...";
             // 
-            // label14
+            // LabelConsultaPeso
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(117, 319);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(20, 18);
-            this.label14.TabIndex = 39;
-            this.label14.Text = "...";
+            this.LabelConsultaPeso.AutoSize = true;
+            this.LabelConsultaPeso.Location = new System.Drawing.Point(117, 319);
+            this.LabelConsultaPeso.Name = "LabelConsultaPeso";
+            this.LabelConsultaPeso.Size = new System.Drawing.Size(20, 18);
+            this.LabelConsultaPeso.TabIndex = 39;
+            this.LabelConsultaPeso.Text = "...";
             // 
-            // label5
+            // LabelConsultaEdad
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(117, 274);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(20, 18);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "...";
+            this.LabelConsultaEdad.AutoSize = true;
+            this.LabelConsultaEdad.Location = new System.Drawing.Point(117, 274);
+            this.LabelConsultaEdad.Name = "LabelConsultaEdad";
+            this.LabelConsultaEdad.Size = new System.Drawing.Size(20, 18);
+            this.LabelConsultaEdad.TabIndex = 38;
+            this.LabelConsultaEdad.Text = "...";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(117, 184);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(20, 18);
+            this.label51.TabIndex = 37;
+            this.label51.Text = "...";
             // 
             // LabelConsultaRaza
             // 
@@ -656,7 +824,7 @@ namespace Veterinaria
             // LabelConsultaEspecie
             // 
             this.LabelConsultaEspecie.AutoSize = true;
-            this.LabelConsultaEspecie.Location = new System.Drawing.Point(117, 184);
+            this.LabelConsultaEspecie.Location = new System.Drawing.Point(461, 274);
             this.LabelConsultaEspecie.Name = "LabelConsultaEspecie";
             this.LabelConsultaEspecie.Size = new System.Drawing.Size(20, 18);
             this.LabelConsultaEspecie.TabIndex = 36;
@@ -733,6 +901,15 @@ namespace Veterinaria
             this.label10.TabIndex = 19;
             this.label10.Text = "Edad:";
             // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(41, 184);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(72, 18);
+            this.label39.TabIndex = 18;
+            this.label39.Text = "Nombre:";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -745,7 +922,7 @@ namespace Veterinaria
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(41, 184);
+            this.label12.Location = new System.Drawing.Point(385, 274);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(70, 18);
             this.label12.TabIndex = 25;
@@ -763,16 +940,19 @@ namespace Veterinaria
             // PestañaModificar
             // 
             this.PestañaModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.PestañaModificar.Controls.Add(this.label33);
+            this.PestañaModificar.Controls.Add(this.label34);
+            this.PestañaModificar.Controls.Add(this.label35);
             this.PestañaModificar.Controls.Add(this.ButtonActualizar);
             this.PestañaModificar.Controls.Add(this.ButtonLimpiarDeModificar);
-            this.PestañaModificar.Controls.Add(this.textBox2);
-            this.PestañaModificar.Controls.Add(this.textBox3);
-            this.PestañaModificar.Controls.Add(this.textBox4);
-            this.PestañaModificar.Controls.Add(this.textBox5);
-            this.PestañaModificar.Controls.Add(this.textBox6);
-            this.PestañaModificar.Controls.Add(this.textBox7);
-            this.PestañaModificar.Controls.Add(this.textBox8);
-            this.PestañaModificar.Controls.Add(this.textBox9);
+            this.PestañaModificar.Controls.Add(this.textBoxNombre);
+            this.PestañaModificar.Controls.Add(this.TextBoxEnfermedadModificar);
+            this.PestañaModificar.Controls.Add(this.TextBoxNombreDuenioModificar);
+            this.PestañaModificar.Controls.Add(this.TextBoxEstaturaModificar);
+            this.PestañaModificar.Controls.Add(this.TextBoxPesoModificar);
+            this.PestañaModificar.Controls.Add(this.TextBoxEdadModificar);
+            this.PestañaModificar.Controls.Add(this.TextBoxRazaModificar);
+            this.PestañaModificar.Controls.Add(this.TextBoxEspecieModificar);
             this.PestañaModificar.Controls.Add(this.label20);
             this.PestañaModificar.Controls.Add(this.label21);
             this.PestañaModificar.Controls.Add(this.label22);
@@ -783,9 +963,8 @@ namespace Veterinaria
             this.PestañaModificar.Controls.Add(this.label27);
             this.PestañaModificar.Controls.Add(this.label28);
             this.PestañaModificar.Controls.Add(this.label29);
-            this.PestañaModificar.Controls.Add(this.label30);
             this.PestañaModificar.Controls.Add(this.ButtonBuscarDeModificar);
-            this.PestañaModificar.Controls.Add(this.textBox1);
+            this.PestañaModificar.Controls.Add(this.TextBoxIDModificar);
             this.PestañaModificar.Controls.Add(this.label18);
             this.PestañaModificar.Controls.Add(this.label19);
             this.PestañaModificar.Location = new System.Drawing.Point(4, 27);
@@ -793,6 +972,33 @@ namespace Veterinaria
             this.PestañaModificar.Size = new System.Drawing.Size(742, 437);
             this.PestañaModificar.TabIndex = 3;
             this.PestañaModificar.Text = "PestañaModificar";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(226, 342);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(32, 18);
+            this.label33.TabIndex = 68;
+            this.label33.Text = "cm";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(226, 297);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(27, 18);
+            this.label34.TabIndex = 69;
+            this.label34.Text = "kg";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(226, 252);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(43, 18);
+            this.label35.TabIndex = 70;
+            this.label35.Text = "años";
             // 
             // ButtonActualizar
             // 
@@ -805,6 +1011,7 @@ namespace Veterinaria
             this.ButtonActualizar.TabIndex = 67;
             this.ButtonActualizar.Text = "Actualizar";
             this.ButtonActualizar.UseVisualStyleBackColor = false;
+            this.ButtonActualizar.Click += new System.EventHandler(this.ButtonActualizar_Click);
             // 
             // ButtonLimpiarDeModificar
             // 
@@ -817,62 +1024,63 @@ namespace Veterinaria
             this.ButtonLimpiarDeModificar.TabIndex = 67;
             this.ButtonLimpiarDeModificar.Text = "Limpiar";
             this.ButtonLimpiarDeModificar.UseVisualStyleBackColor = false;
+            this.ButtonLimpiarDeModificar.Click += new System.EventHandler(this.ButtonLimpiarDeModificar_Click);
             // 
-            // textBox2
+            // textBoxNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(484, 212);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(248, 26);
-            this.textBox2.TabIndex = 66;
+            this.textBoxNombre.Location = new System.Drawing.Point(484, 249);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(248, 26);
+            this.textBoxNombre.TabIndex = 66;
             // 
-            // textBox3
+            // TextBoxEnfermedadModificar
             // 
-            this.textBox3.Location = new System.Drawing.Point(484, 167);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(248, 26);
-            this.textBox3.TabIndex = 58;
+            this.TextBoxEnfermedadModificar.Location = new System.Drawing.Point(484, 204);
+            this.TextBoxEnfermedadModificar.Name = "TextBoxEnfermedadModificar";
+            this.TextBoxEnfermedadModificar.Size = new System.Drawing.Size(248, 26);
+            this.TextBoxEnfermedadModificar.TabIndex = 66;
             // 
-            // textBox4
+            // TextBoxNombreDuenioModificar
             // 
-            this.textBox4.Location = new System.Drawing.Point(87, 392);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(116, 26);
-            this.textBox4.TabIndex = 65;
+            this.TextBoxNombreDuenioModificar.Location = new System.Drawing.Point(483, 154);
+            this.TextBoxNombreDuenioModificar.Name = "TextBoxNombreDuenioModificar";
+            this.TextBoxNombreDuenioModificar.Size = new System.Drawing.Size(248, 26);
+            this.TextBoxNombreDuenioModificar.TabIndex = 58;
             // 
-            // textBox5
+            // TextBoxEstaturaModificar
             // 
-            this.textBox5.Location = new System.Drawing.Point(87, 347);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(116, 26);
-            this.textBox5.TabIndex = 64;
+            this.TextBoxEstaturaModificar.Location = new System.Drawing.Point(87, 330);
+            this.TextBoxEstaturaModificar.Name = "TextBoxEstaturaModificar";
+            this.TextBoxEstaturaModificar.Size = new System.Drawing.Size(116, 26);
+            this.TextBoxEstaturaModificar.TabIndex = 65;
             // 
-            // textBox6
+            // TextBoxPesoModificar
             // 
-            this.textBox6.Location = new System.Drawing.Point(87, 302);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(116, 26);
-            this.textBox6.TabIndex = 63;
+            this.TextBoxPesoModificar.Location = new System.Drawing.Point(87, 285);
+            this.TextBoxPesoModificar.Name = "TextBoxPesoModificar";
+            this.TextBoxPesoModificar.Size = new System.Drawing.Size(116, 26);
+            this.TextBoxPesoModificar.TabIndex = 64;
             // 
-            // textBox7
+            // TextBoxEdadModificar
             // 
-            this.textBox7.Location = new System.Drawing.Point(87, 257);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(248, 26);
-            this.textBox7.TabIndex = 62;
+            this.TextBoxEdadModificar.Location = new System.Drawing.Point(87, 244);
+            this.TextBoxEdadModificar.Name = "TextBoxEdadModificar";
+            this.TextBoxEdadModificar.Size = new System.Drawing.Size(116, 26);
+            this.TextBoxEdadModificar.TabIndex = 63;
             // 
-            // textBox8
+            // TextBoxRazaModificar
             // 
-            this.textBox8.Location = new System.Drawing.Point(87, 212);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(248, 26);
-            this.textBox8.TabIndex = 61;
+            this.TextBoxRazaModificar.Location = new System.Drawing.Point(87, 199);
+            this.TextBoxRazaModificar.Name = "TextBoxRazaModificar";
+            this.TextBoxRazaModificar.Size = new System.Drawing.Size(248, 26);
+            this.TextBoxRazaModificar.TabIndex = 62;
             // 
-            // textBox9
+            // TextBoxEspecieModificar
             // 
-            this.textBox9.Location = new System.Drawing.Point(87, 167);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(248, 26);
-            this.textBox9.TabIndex = 60;
+            this.TextBoxEspecieModificar.Location = new System.Drawing.Point(87, 159);
+            this.TextBoxEspecieModificar.Name = "TextBoxEspecieModificar";
+            this.TextBoxEspecieModificar.Size = new System.Drawing.Size(248, 26);
+            this.TextBoxEspecieModificar.TabIndex = 61;
             // 
             // label20
             // 
@@ -896,16 +1104,16 @@ namespace Veterinaria
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(354, 265);
+            this.label22.Location = new System.Drawing.Point(354, 252);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(43, 18);
-            this.label22.TabIndex = 55;
-            this.label22.Text = "Foto:";
+            this.label22.Size = new System.Drawing.Size(72, 18);
+            this.label22.TabIndex = 54;
+            this.label22.Text = "Nombre:";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(354, 215);
+            this.label23.Location = new System.Drawing.Point(354, 207);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(102, 18);
             this.label23.TabIndex = 54;
@@ -914,7 +1122,7 @@ namespace Veterinaria
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(354, 170);
+            this.label24.Location = new System.Drawing.Point(354, 162);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(124, 18);
             this.label24.TabIndex = 53;
@@ -923,7 +1131,7 @@ namespace Veterinaria
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(11, 395);
+            this.label25.Location = new System.Drawing.Point(12, 338);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(68, 18);
             this.label25.TabIndex = 52;
@@ -932,7 +1140,7 @@ namespace Veterinaria
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(11, 350);
+            this.label26.Location = new System.Drawing.Point(12, 293);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(42, 18);
             this.label26.TabIndex = 51;
@@ -941,7 +1149,7 @@ namespace Veterinaria
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(11, 305);
+            this.label27.Location = new System.Drawing.Point(11, 252);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(50, 18);
             this.label27.TabIndex = 50;
@@ -950,7 +1158,7 @@ namespace Veterinaria
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(11, 260);
+            this.label28.Location = new System.Drawing.Point(11, 207);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(48, 18);
             this.label28.TabIndex = 49;
@@ -959,20 +1167,11 @@ namespace Veterinaria
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(11, 215);
+            this.label29.Location = new System.Drawing.Point(11, 167);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(70, 18);
             this.label29.TabIndex = 56;
             this.label29.Text = "Especie:";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(11, 170);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(72, 18);
-            this.label30.TabIndex = 48;
-            this.label30.Text = "Nombre:";
             // 
             // ButtonBuscarDeModificar
             // 
@@ -985,13 +1184,14 @@ namespace Veterinaria
             this.ButtonBuscarDeModificar.TabIndex = 47;
             this.ButtonBuscarDeModificar.Text = "Buscar";
             this.ButtonBuscarDeModificar.UseVisualStyleBackColor = false;
+            this.ButtonBuscarDeModificar.Click += new System.EventHandler(this.ButtonBuscarDeModificar_Click);
             // 
-            // textBox1
+            // TextBoxIDModificar
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(248, 26);
-            this.textBox1.TabIndex = 46;
+            this.TextBoxIDModificar.Location = new System.Drawing.Point(103, 39);
+            this.TextBoxIDModificar.Name = "TextBoxIDModificar";
+            this.TextBoxIDModificar.Size = new System.Drawing.Size(248, 26);
+            this.TextBoxIDModificar.TabIndex = 46;
             // 
             // label18
             // 
@@ -1016,15 +1216,18 @@ namespace Veterinaria
             // PestañaEliminar
             // 
             this.PestañaEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.PestañaEliminar.Controls.Add(this.ButtonBorrar);
-            this.PestañaEliminar.Controls.Add(this.label47);
-            this.PestañaEliminar.Controls.Add(this.label33);
-            this.PestañaEliminar.Controls.Add(this.label34);
-            this.PestañaEliminar.Controls.Add(this.label35);
             this.PestañaEliminar.Controls.Add(this.label36);
             this.PestañaEliminar.Controls.Add(this.label37);
             this.PestañaEliminar.Controls.Add(this.label38);
-            this.PestañaEliminar.Controls.Add(this.label39);
+            this.PestañaEliminar.Controls.Add(this.ButtonBorrar);
+            this.PestañaEliminar.Controls.Add(this.label47);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarEnfermedad);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarNombreDuenio);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarEstatura);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarPeso);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarEdad);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarRaza);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarEspecie);
             this.PestañaEliminar.Controls.Add(this.label40);
             this.PestañaEliminar.Controls.Add(this.label41);
             this.PestañaEliminar.Controls.Add(this.label42);
@@ -1032,8 +1235,8 @@ namespace Veterinaria
             this.PestañaEliminar.Controls.Add(this.label44);
             this.PestañaEliminar.Controls.Add(this.label45);
             this.PestañaEliminar.Controls.Add(this.label46);
-            this.PestañaEliminar.Controls.Add(this.button1);
-            this.PestañaEliminar.Controls.Add(this.textBox10);
+            this.PestañaEliminar.Controls.Add(this.BotonConsultarIDEliminar);
+            this.PestañaEliminar.Controls.Add(this.TextBoxIDEliminar);
             this.PestañaEliminar.Controls.Add(this.label31);
             this.PestañaEliminar.Controls.Add(this.label32);
             this.PestañaEliminar.Location = new System.Drawing.Point(4, 27);
@@ -1042,9 +1245,37 @@ namespace Veterinaria
             this.PestañaEliminar.TabIndex = 4;
             this.PestañaEliminar.Text = "PestañaEliminar";
             // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(282, 339);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(32, 18);
+            this.label36.TabIndex = 69;
+            this.label36.Text = "cm";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(282, 294);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(27, 18);
+            this.label37.TabIndex = 70;
+            this.label37.Text = "kg";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(282, 249);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(43, 18);
+            this.label38.TabIndex = 71;
+            this.label38.Text = "años";
+            // 
             // ButtonBorrar
             // 
             this.ButtonBorrar.BackColor = System.Drawing.Color.Crimson;
+            this.ButtonBorrar.Enabled = false;
             this.ButtonBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonBorrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ButtonBorrar.Location = new System.Drawing.Point(568, 369);
@@ -1053,6 +1284,7 @@ namespace Veterinaria
             this.ButtonBorrar.TabIndex = 68;
             this.ButtonBorrar.Text = "Borrar";
             this.ButtonBorrar.UseVisualStyleBackColor = false;
+            this.ButtonBorrar.Click += new System.EventHandler(this.ButtonBorrar_Click);
             // 
             // label47
             // 
@@ -1062,68 +1294,68 @@ namespace Veterinaria
             this.label47.TabIndex = 66;
             this.label47.Text = "                                  \r\n\r\n\r\n                    Aqui va la foto";
             // 
-            // label33
+            // LabelEliminarEnfermedad
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(501, 204);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(20, 18);
-            this.label33.TabIndex = 65;
-            this.label33.Text = "...";
+            this.LabelEliminarEnfermedad.AutoSize = true;
+            this.LabelEliminarEnfermedad.Location = new System.Drawing.Point(501, 204);
+            this.LabelEliminarEnfermedad.Name = "LabelEliminarEnfermedad";
+            this.LabelEliminarEnfermedad.Size = new System.Drawing.Size(20, 18);
+            this.LabelEliminarEnfermedad.TabIndex = 65;
+            this.LabelEliminarEnfermedad.Text = "...";
             // 
-            // label34
+            // LabelEliminarNombreDuenio
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(501, 159);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(20, 18);
-            this.label34.TabIndex = 64;
-            this.label34.Text = "...";
+            this.LabelEliminarNombreDuenio.AutoSize = true;
+            this.LabelEliminarNombreDuenio.Location = new System.Drawing.Point(501, 159);
+            this.LabelEliminarNombreDuenio.Name = "LabelEliminarNombreDuenio";
+            this.LabelEliminarNombreDuenio.Size = new System.Drawing.Size(20, 18);
+            this.LabelEliminarNombreDuenio.TabIndex = 64;
+            this.LabelEliminarNombreDuenio.Text = "...";
             // 
-            // label35
+            // LabelEliminarEstatura
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(103, 339);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(20, 18);
-            this.label35.TabIndex = 63;
-            this.label35.Text = "...";
+            this.LabelEliminarEstatura.AutoSize = true;
+            this.LabelEliminarEstatura.Location = new System.Drawing.Point(103, 339);
+            this.LabelEliminarEstatura.Name = "LabelEliminarEstatura";
+            this.LabelEliminarEstatura.Size = new System.Drawing.Size(20, 18);
+            this.LabelEliminarEstatura.TabIndex = 63;
+            this.LabelEliminarEstatura.Text = "...";
             // 
-            // label36
+            // LabelEliminarPeso
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(103, 294);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(20, 18);
-            this.label36.TabIndex = 62;
-            this.label36.Text = "...";
+            this.LabelEliminarPeso.AutoSize = true;
+            this.LabelEliminarPeso.Location = new System.Drawing.Point(103, 294);
+            this.LabelEliminarPeso.Name = "LabelEliminarPeso";
+            this.LabelEliminarPeso.Size = new System.Drawing.Size(20, 18);
+            this.LabelEliminarPeso.TabIndex = 62;
+            this.LabelEliminarPeso.Text = "...";
             // 
-            // label37
+            // LabelEliminarEdad
             // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(103, 249);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(20, 18);
-            this.label37.TabIndex = 61;
-            this.label37.Text = "...";
+            this.LabelEliminarEdad.AutoSize = true;
+            this.LabelEliminarEdad.Location = new System.Drawing.Point(103, 249);
+            this.LabelEliminarEdad.Name = "LabelEliminarEdad";
+            this.LabelEliminarEdad.Size = new System.Drawing.Size(20, 18);
+            this.LabelEliminarEdad.TabIndex = 61;
+            this.LabelEliminarEdad.Text = "...";
             // 
-            // label38
+            // LabelEliminarRaza
             // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(103, 204);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(20, 18);
-            this.label38.TabIndex = 60;
-            this.label38.Text = "...";
+            this.LabelEliminarRaza.AutoSize = true;
+            this.LabelEliminarRaza.Location = new System.Drawing.Point(103, 204);
+            this.LabelEliminarRaza.Name = "LabelEliminarRaza";
+            this.LabelEliminarRaza.Size = new System.Drawing.Size(20, 18);
+            this.LabelEliminarRaza.TabIndex = 60;
+            this.LabelEliminarRaza.Text = "...";
             // 
-            // label39
+            // LabelEliminarEspecie
             // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(103, 159);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(20, 18);
-            this.label39.TabIndex = 59;
-            this.label39.Text = "...";
+            this.LabelEliminarEspecie.AutoSize = true;
+            this.LabelEliminarEspecie.Location = new System.Drawing.Point(103, 159);
+            this.LabelEliminarEspecie.Name = "LabelEliminarEspecie";
+            this.LabelEliminarEspecie.Size = new System.Drawing.Size(20, 18);
+            this.LabelEliminarEspecie.TabIndex = 59;
+            this.LabelEliminarEspecie.Text = "...";
             // 
             // label40
             // 
@@ -1188,24 +1420,25 @@ namespace Veterinaria
             this.label46.TabIndex = 58;
             this.label46.Text = "Especie:";
             // 
-            // button1
+            // BotonConsultarIDEliminar
             // 
-            this.button1.BackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(229, 71);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 28);
-            this.button1.TabIndex = 51;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BotonConsultarIDEliminar.BackColor = System.Drawing.Color.SteelBlue;
+            this.BotonConsultarIDEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonConsultarIDEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BotonConsultarIDEliminar.Location = new System.Drawing.Point(229, 72);
+            this.BotonConsultarIDEliminar.Name = "BotonConsultarIDEliminar";
+            this.BotonConsultarIDEliminar.Size = new System.Drawing.Size(122, 28);
+            this.BotonConsultarIDEliminar.TabIndex = 51;
+            this.BotonConsultarIDEliminar.Text = "Buscar";
+            this.BotonConsultarIDEliminar.UseVisualStyleBackColor = false;
+            this.BotonConsultarIDEliminar.Click += new System.EventHandler(this.BotonConsultarIDEliminar_Click);
             // 
-            // textBox10
+            // TextBoxIDEliminar
             // 
-            this.textBox10.Location = new System.Drawing.Point(103, 39);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(248, 26);
-            this.textBox10.TabIndex = 50;
+            this.TextBoxIDEliminar.Location = new System.Drawing.Point(103, 39);
+            this.TextBoxIDEliminar.Name = "TextBoxIDEliminar";
+            this.TextBoxIDEliminar.Size = new System.Drawing.Size(248, 26);
+            this.TextBoxIDEliminar.TabIndex = 50;
             // 
             // label31
             // 
@@ -1230,26 +1463,82 @@ namespace Veterinaria
             // PestañaListar
             // 
             this.PestañaListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.PestañaListar.Controls.Add(this.button2);
+            this.PestañaListar.Controls.Add(this.DataGridListar);
+            this.PestañaListar.Controls.Add(this.BotonListarMascotas);
             this.PestañaListar.Controls.Add(this.label48);
-            this.PestañaListar.Controls.Add(this.dataGridView1);
             this.PestañaListar.Location = new System.Drawing.Point(4, 27);
             this.PestañaListar.Name = "PestañaListar";
             this.PestañaListar.Size = new System.Drawing.Size(742, 437);
             this.PestañaListar.TabIndex = 5;
             this.PestañaListar.Text = "PestañaListar";
             // 
-            // button2
+            // DataGridListar
             // 
-            this.button2.BackColor = System.Drawing.Color.Tomato;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(609, 372);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 38);
-            this.button2.TabIndex = 68;
-            this.button2.Text = "Listar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.DataGridListar.AllowUserToAddRows = false;
+            this.DataGridListar.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridListar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridListar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridListar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(184)))), ((int)(((byte)(182)))));
+            this.DataGridListar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridListar.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(85)))), ((int)(((byte)(75)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridListar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridListar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnID,
+            this.ColumnNombreDuenio,
+            this.ColumnRaza});
+            this.DataGridListar.DoubleBuffered = true;
+            this.DataGridListar.EnableHeadersVisualStyles = false;
+            this.DataGridListar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.DataGridListar.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(85)))), ((int)(((byte)(75)))));
+            this.DataGridListar.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGridListar.Location = new System.Drawing.Point(79, 51);
+            this.DataGridListar.Name = "DataGridListar";
+            this.DataGridListar.ReadOnly = true;
+            this.DataGridListar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridListar.RowHeadersVisible = false;
+            this.DataGridListar.RowHeadersWidth = 50;
+            this.DataGridListar.Size = new System.Drawing.Size(595, 303);
+            this.DataGridListar.TabIndex = 74;
+            // 
+            // ColumnID
+            // 
+            this.ColumnID.HeaderText = "ID";
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            // 
+            // ColumnNombreDuenio
+            // 
+            this.ColumnNombreDuenio.HeaderText = "Nombre dueño";
+            this.ColumnNombreDuenio.Name = "ColumnNombreDuenio";
+            this.ColumnNombreDuenio.ReadOnly = true;
+            // 
+            // ColumnRaza
+            // 
+            this.ColumnRaza.HeaderText = "Raza";
+            this.ColumnRaza.Name = "ColumnRaza";
+            this.ColumnRaza.ReadOnly = true;
+            // 
+            // BotonListarMascotas
+            // 
+            this.BotonListarMascotas.BackColor = System.Drawing.Color.Tomato;
+            this.BotonListarMascotas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonListarMascotas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BotonListarMascotas.Location = new System.Drawing.Point(609, 372);
+            this.BotonListarMascotas.Name = "BotonListarMascotas";
+            this.BotonListarMascotas.Size = new System.Drawing.Size(122, 38);
+            this.BotonListarMascotas.TabIndex = 68;
+            this.BotonListarMascotas.Text = "Listar";
+            this.BotonListarMascotas.UseVisualStyleBackColor = false;
+            this.BotonListarMascotas.Click += new System.EventHandler(this.BotonListarMascotas_Click);
             // 
             // label48
             // 
@@ -1261,14 +1550,6 @@ namespace Veterinaria
             this.label48.Size = new System.Drawing.Size(254, 27);
             this.label48.TabIndex = 50;
             this.label48.Text = "Listado de mascotas";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 51);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(706, 297);
-            this.dataGridView1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -1490,86 +1771,6 @@ namespace Veterinaria
             this.bunifuDragControl1.TargetControl = this;
             this.bunifuDragControl1.Vertical = true;
             // 
-            // ButtonModificar2
-            // 
-            this.ButtonModificar2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ButtonModificar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonModificar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.ButtonModificar2.FlatAppearance.BorderSize = 0;
-            this.ButtonModificar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonModificar2.ForeColor = System.Drawing.Color.BlueViolet;
-            this.ButtonModificar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonModificar2.Image")));
-            this.ButtonModificar2.Location = new System.Drawing.Point(522, 27);
-            this.ButtonModificar2.Name = "ButtonModificar2";
-            this.ButtonModificar2.Size = new System.Drawing.Size(89, 83);
-            this.ButtonModificar2.TabIndex = 2;
-            this.ButtonModificar2.UseVisualStyleBackColor = false;
-            this.ButtonModificar2.Click += new System.EventHandler(this.ButtonModificar2_Click);
-            // 
-            // ButtonAgregar2
-            // 
-            this.ButtonAgregar2.BackColor = System.Drawing.Color.Orange;
-            this.ButtonAgregar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonAgregar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.ButtonAgregar2.FlatAppearance.BorderSize = 0;
-            this.ButtonAgregar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAgregar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ButtonAgregar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonAgregar2.Image")));
-            this.ButtonAgregar2.Location = new System.Drawing.Point(418, 41);
-            this.ButtonAgregar2.Name = "ButtonAgregar2";
-            this.ButtonAgregar2.Size = new System.Drawing.Size(89, 83);
-            this.ButtonAgregar2.TabIndex = 2;
-            this.ButtonAgregar2.UseVisualStyleBackColor = false;
-            this.ButtonAgregar2.Click += new System.EventHandler(this.ButtonAgregar2_Click);
-            // 
-            // ButtonListar2
-            // 
-            this.ButtonListar2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ButtonListar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonListar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.ButtonListar2.FlatAppearance.BorderSize = 0;
-            this.ButtonListar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonListar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ButtonListar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonListar2.Image")));
-            this.ButtonListar2.Location = new System.Drawing.Point(314, 27);
-            this.ButtonListar2.Name = "ButtonListar2";
-            this.ButtonListar2.Size = new System.Drawing.Size(89, 83);
-            this.ButtonListar2.TabIndex = 2;
-            this.ButtonListar2.UseVisualStyleBackColor = false;
-            this.ButtonListar2.Click += new System.EventHandler(this.ButtonListar2_Click);
-            // 
-            // ButtonEliminar2
-            // 
-            this.ButtonEliminar2.BackColor = System.Drawing.Color.Crimson;
-            this.ButtonEliminar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonEliminar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.ButtonEliminar2.FlatAppearance.BorderSize = 0;
-            this.ButtonEliminar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonEliminar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ButtonEliminar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonEliminar2.Image")));
-            this.ButtonEliminar2.Location = new System.Drawing.Point(210, 41);
-            this.ButtonEliminar2.Name = "ButtonEliminar2";
-            this.ButtonEliminar2.Size = new System.Drawing.Size(89, 83);
-            this.ButtonEliminar2.TabIndex = 2;
-            this.ButtonEliminar2.UseVisualStyleBackColor = false;
-            this.ButtonEliminar2.Click += new System.EventHandler(this.ButtonEliminar2_Click);
-            // 
-            // ButtonConsultar2
-            // 
-            this.ButtonConsultar2.BackColor = System.Drawing.Color.MediumVioletRed;
-            this.ButtonConsultar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonConsultar2.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
-            this.ButtonConsultar2.FlatAppearance.BorderSize = 0;
-            this.ButtonConsultar2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonConsultar2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.ButtonConsultar2.Image = ((System.Drawing.Image)(resources.GetObject("ButtonConsultar2.Image")));
-            this.ButtonConsultar2.Location = new System.Drawing.Point(106, 27);
-            this.ButtonConsultar2.Name = "ButtonConsultar2";
-            this.ButtonConsultar2.Size = new System.Drawing.Size(89, 83);
-            this.ButtonConsultar2.TabIndex = 2;
-            this.ButtonConsultar2.UseVisualStyleBackColor = false;
-            this.ButtonConsultar2.Click += new System.EventHandler(this.ButtonConsultar2_Click);
-            // 
             // bunifuDragControl2
             // 
             this.bunifuDragControl2.Fixed = true;
@@ -1616,7 +1817,7 @@ namespace Veterinaria
             this.PestañaEliminar.PerformLayout();
             this.PestañaListar.ResumeLayout(false);
             this.PestañaListar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridListar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1637,6 +1838,26 @@ namespace Veterinaria
         private ns1.BunifuDragControl bunifuDragControl1;
         private ns1.BunifuDragControl bunifuDragControl2;
         private ns1.BunifuDragControl bunifuDragControl3;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.TextBox textBoxNombre;
+        private System.Windows.Forms.Label label22;
+        private ns1.BunifuCustomDataGrid DataGridListar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNombreDuenio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnRaza;
     }
 }
 

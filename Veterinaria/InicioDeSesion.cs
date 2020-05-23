@@ -21,7 +21,7 @@ namespace Veterinaria
 		{
 		
 			InitializeComponent();
-			
+
 		}
 		
         // LOGICA DE DISEÑO - INICIO
@@ -42,17 +42,30 @@ namespace Veterinaria
 
         private void ButtonIniciarSesion_Click(object sender, EventArgs e)
         {
-            if (TextBoxCorreo.Text == "super")
+            AdminUsuario adminUsuario = new AdminUsuario();
+            Usuario usuarioActual = new Usuario();
+            String correo = TextBoxCorreo.Text;
+            String contra = TextBoxContrasenia.Text;
+            if (adminUsuario.existeUsuario(correo, contra))
             {
-                MenuUsuarios menuUsuarios = new MenuUsuarios();
-                menuUsuarios.Show();
+                usuarioActual = adminUsuario.consultarUsuario(correo);
+                if (usuarioActual.dameTipoUsuario() == "Super Usuario")
+                {
+                    MenuUsuarios menuUsuarios = new MenuUsuarios();
+                    menuUsuarios.Show();
+                }
+                else if (usuarioActual.dameTipoUsuario() == "Enfermero" ||
+                         usuarioActual.dameTipoUsuario() == "Recepcionista" ||
+                         usuarioActual.dameTipoUsuario() == "Veterinario")
+                {
+                    MenuMascotas menuMascotas = new MenuMascotas(usuarioActual.dameTipoUsuario());
+                    menuMascotas.Show();
+                }
+                this.Close();
             }
-            else
-            {
-                MenuMascotas menuMascotas = new MenuMascotas();
-                menuMascotas.Show();
-            }
-            this.Close();
+            else MessageBox.Show("Alejate de la maquina que va a explotar metiche");
+
+            
         }
 
         

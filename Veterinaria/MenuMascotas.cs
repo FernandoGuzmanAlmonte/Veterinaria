@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace Veterinaria
 {
@@ -16,13 +17,31 @@ namespace Veterinaria
 	/// Description of MenuMascotas.
 	/// </summary>
 	public partial class MenuMascotas : Form
-	{	
-		public MenuMascotas()
-		{
-			
-			InitializeComponent();
-			PanelDeDesplazamiento.Visible = false;
-		}
+	{
+        private String tipoUsuario;
+
+        public MenuMascotas(String tipoUsuario)
+        {
+            this.tipoUsuario = tipoUsuario;
+            InitializeComponent();
+            PanelDeDesplazamiento.Visible = false;
+            accesosUsuarios();
+        }
+
+        public void accesosUsuarios()
+        {
+            if (tipoUsuario == "Enfermero") ButtonAgregar.Visible = false;
+            else ButtonAgregar.Visible = true;
+
+            if (tipoUsuario == "Veterinario") ButtonModificar.Visible = true;
+            else ButtonModificar.Visible = false;
+
+            if (tipoUsuario == "Veterinario") ButtonEliminar.Visible = true;
+            else ButtonEliminar.Visible = false;
+
+            if (tipoUsuario == "Veterinario") ButtonListar.Visible = false;
+            else ButtonListar.Visible = true;
+        }
 
         // LOGICA DE DISEÑO - FIN
         void desplazarPanelDeDesplazamiento(int altura, int posicionParteSuperior)
@@ -95,7 +114,7 @@ namespace Veterinaria
         }
         private void ButtonMinimizar_Click(object sender, EventArgs e)
         {
-            
+            this.WindowState = FormWindowState.Minimized;
         }
         // LOGICA DE DISEÑO - FIN
 
@@ -115,6 +134,202 @@ namespace Veterinaria
                 this.Close();
             }
 		}
-        // LOGICA DE DATOS - FIN
+
+        private void ButtonGuardar_Click(object sender, EventArgs e)
+        {
+            String nombre = TextBoxAgregarNombre.Text;
+            String especie = TextBoxAgregarEspecie.Text;
+            String raza = TextBoxAgregarRaza.Text;
+            int edad = Int32.Parse(TextBoxAgregarEdad.Text);
+            double peso = double.Parse(TextBoxAgregarPeso.Text);
+            double estatura = double.Parse(TextBoxAgregarEstatura.Text);
+            String nombreDuenio = TextBoxAgregarDueño.Text;
+            if (nombre.Length>2 && especie.Length > 2 && raza.Length > 2 && 
+                nombreDuenio.Length > 3)
+            {
+                AdminMascotas adminMascota = new AdminMascotas();
+                MessageBox.Show(nombre+especie+raza+edad+peso+estatura+nombreDuenio);
+                if (adminMascota.agregarMascota(nombre, especie, raza, edad, peso, estatura,
+                    nombreDuenio))
+                {
+                    MessageBox.Show(" Se han guardado los datos");
+                    TextBoxAgregarNombre.Clear();
+                    TextBoxAgregarEspecie.Clear();
+                    TextBoxAgregarRaza.Clear();
+                    TextBoxAgregarEdad.Clear();
+                    TextBoxAgregarPeso.Clear();
+                    TextBoxAgregarEstatura.Clear();
+                    TextBoxAgregarDueño.Clear();
+                    TextBoxAgregarEnfermedad.Clear();
+                }
+                else
+                {
+                    MessageBox.Show(" No se han podido guardar los cambios");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Favor de verificar los datos");
+            }
+        }
+
+        private void ButtonLimpiarDeAgregar_Click(object sender, EventArgs e)
+        {
+            TextBoxAgregarNombre.Clear();
+            TextBoxAgregarEspecie.Clear();
+            TextBoxAgregarRaza.Clear();
+            TextBoxAgregarEdad.Clear();
+            TextBoxAgregarPeso.Clear();
+            TextBoxAgregarEstatura.Clear();
+            TextBoxAgregarDueño.Clear();
+            TextBoxAgregarEnfermedad.Clear();
+        }
+
+        private void ButtonBuscarDeConsultar_Click(object sender, EventArgs e)
+        {
+            AdminMascotas adminMascotas = new AdminMascotas();
+            Mascota mascota = new Mascota();
+            String id = TextBoxConsultaID.Text;
+            mascota = adminMascotas.consultarMascota(id);
+            LabelConsultaEspecie.Text = mascota.dameEspecie();
+            LabelConsultaRaza.Text = mascota.dameRaza();
+            LabelConsultaEdad.Text = mascota.dameEdad().ToString();
+            LabelConsultaPeso.Text = mascota.damePeso().ToString();
+            LabelConsultaEstatura.Text = mascota.dameEstatura().ToString();
+            LabelConsultaDuenio.Text = mascota.dameNombreDuenio();
+            label51.Text = mascota.dameNombre();
+            //LabelConsultaEnfermedad.Text = "Peditos Fuertes";                         PIDU QUIERE PONER LA PEDORRERA Y YO DIGO QUE NO
+        }
+
+        private void ButtonBuscarDeModificar_Click(object sender, EventArgs e)
+        {
+            AdminMascotas adminMascota = new AdminMascotas();
+            Mascota mascota = new Mascota();
+            String id = TextBoxIDModificar.Text;
+            mascota = adminMascota.consultarMascota(id);
+            textBoxNombre.Text = mascota.dameNombre();
+            TextBoxEspecieModificar.Text = mascota.dameEspecie();
+            TextBoxRazaModificar.Text = mascota.dameRaza();
+            TextBoxEdadModificar.Text = mascota.dameEdad().ToString();
+            TextBoxPesoModificar.Text = mascota.damePeso().ToString();
+            TextBoxEstaturaModificar.Text = mascota.dameEstatura().ToString();
+            TextBoxNombreDuenioModificar.Text = mascota.dameNombreDuenio().ToString();
+            //TextBoxEnfermedadModificar.Text = "Peditos Olorosos";                     PIDU QUIERE PONER LA PEDORRERA Y YO DIGO QUE NO
+        }
+
+        private void ButtonActualizar_Click(object sender, EventArgs e)
+        {
+            AdminMascotas adminMascota = new AdminMascotas();
+            Mascota mascota = new Mascota();
+            String id = TextBoxIDModificar.Text;
+            String nombre = textBoxNombre.Text;
+            String especie = TextBoxEspecieModificar.Text;
+            String raza = TextBoxRazaModificar.Text;
+            int edad = Int32.Parse(TextBoxEdadModificar.Text);
+            double peso = double.Parse(TextBoxPesoModificar.Text);
+            double estatura = double.Parse(TextBoxEstaturaModificar.Text);
+            String nombreDuenio = TextBoxNombreDuenioModificar.Text;
+            String enfermedad = TextBoxEnfermedadModificar.Text;
+            if (especie.Length > 2 && raza.Length > 2 && nombreDuenio.Length > 3 && 
+                enfermedad.Length > 4)
+            {
+                if (adminMascota.modificarMascota(id, nombre, especie, raza, edad, peso, estatura,
+                    nombreDuenio))
+                {
+                    MessageBox.Show(" Se ha guardado tus datos ");
+                    TextBoxIDModificar.Clear();
+                    TextBoxEspecieModificar.Clear();
+                    TextBoxRazaModificar.Clear();
+                    TextBoxEdadModificar.Clear();
+                    TextBoxPesoModificar.Clear();
+                    TextBoxEstaturaModificar.Clear();
+                    TextBoxNombreDuenioModificar.Clear();
+                    TextBoxEnfermedadModificar.Clear();
+                    textBoxNombre.Clear();
+                }
+                else
+                {
+                    MessageBox.Show(" El coronavirus evito que esto se guardara");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Datos Incompletos Favor de Verificar");
+            }
+        }
+
+        private void ButtonLimpiarDeModificar_Click(object sender, EventArgs e)
+        {
+            TextBoxIDModificar.Clear();
+            TextBoxEspecieModificar.Clear();
+            TextBoxRazaModificar.Clear();
+            TextBoxEdadModificar.Clear();
+            TextBoxPesoModificar.Clear();
+            TextBoxEstaturaModificar.Clear();
+            TextBoxNombreDuenioModificar.Clear();
+            TextBoxEnfermedadModificar.Clear();
+            textBoxNombre.Clear();
+        }
+
+        private void BotonConsultarIDEliminar_Click(object sender, EventArgs e)
+        {
+            AdminMascotas adminMascota = new AdminMascotas();
+            Mascota mascota = new Mascota();
+            String id = TextBoxIDEliminar.Text;
+            mascota = adminMascota.consultarMascota(id);
+            if(mascota != null)
+            {
+                ButtonBorrar.Enabled = true;
+                LabelEliminarEspecie.Text = mascota.dameEspecie();
+                LabelEliminarRaza.Text = mascota.dameRaza();
+                LabelEliminarEdad.Text = mascota.dameEdad().ToString();
+                LabelEliminarPeso.Text = mascota.damePeso().ToString();
+                LabelEliminarEstatura.Text = mascota.dameEstatura().ToString();
+                LabelEliminarNombreDuenio.Text = mascota.dameNombreDuenio().ToString();
+                //LabelEliminarEnfermedad.Text = " Pedorrera Masiva";                    PIDU QUIERE PONER LA PEDORRERA Y YO DIGO QUE NO
+            }
+            else
+            {
+                MessageBox.Show(" No hay registros de la mascota");
+            }
+        }
+
+        private void ButtonBorrar_Click(object sender, EventArgs e)
+        {
+            AdminMascotas adminMascota = new AdminMascotas();
+            Mascota mascota = new Mascota();
+            String id = TextBoxIDEliminar.Text;
+            mascota = adminMascota.consultarMascota(id);
+            if (adminMascota.eliminarMascota(id))
+            {
+                MessageBox.Show(" Ahora comes con el enemigo ");
+                TextBoxIDEliminar.Clear();
+                LabelEliminarEspecie.Text = "...";
+                LabelEliminarRaza.Text = "...";
+                LabelEliminarEdad.Text = "...";
+                LabelEliminarPeso.Text = "...";
+                LabelEliminarEstatura.Text = "...";
+                LabelEliminarNombreDuenio.Text = "...";
+                LabelEliminarEnfermedad.Text = "...";
+                BotonConsultarIDEliminar.Enabled = false;
+            }
+        }
+
+        private void BotonListarMascotas_Click(object sender, EventArgs e)
+        {
+            AdminMascotas admin = new AdminMascotas();
+            DataGridListar.Rows.Clear();
+            List<Mascota> mascotas = admin.listarMascotas();
+
+            foreach (Mascota mascota in mascotas)
+            {
+                DataGridListar.Rows.Add(new object[] {
+                    mascota.dameId(),
+                    mascota.dameNombreDuenio(),
+                    mascota.dameRaza()
+                });
+            }
+        }
+        // LOGICA DE DATOS - FIN        
     }
 }

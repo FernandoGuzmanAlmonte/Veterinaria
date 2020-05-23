@@ -38,7 +38,13 @@ namespace Veterinaria
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUsuarios));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuDragControl1 = new ns1.BunifuDragControl(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ButtonPowerOff = new System.Windows.Forms.Button();
+            this.ButtonMinimizar = new System.Windows.Forms.Button();
+            this.ButtonSalir = new System.Windows.Forms.Button();
             this.bunifuElipse1 = new ns1.BunifuElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.PanelDeDesplazamiento = new System.Windows.Forms.Panel();
@@ -47,21 +53,17 @@ namespace Veterinaria
             this.ButtonModificar = new System.Windows.Forms.Button();
             this.ButtonConsultar = new System.Windows.Forms.Button();
             this.ButtonAgregar = new System.Windows.Forms.Button();
-            this.ButtonSalir = new System.Windows.Forms.Button();
-            this.ButtonMinimizar = new System.Windows.Forms.Button();
-            this.ButtonPowerOff = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.TabuladorABC = new System.Windows.Forms.TabControl();
             this.PestañaAgregar = new System.Windows.Forms.TabPage();
-            this.TextBoxAgregarEnfermedad = new System.Windows.Forms.TextBox();
-            this.TextBoxAgregarDueño = new System.Windows.Forms.TextBox();
+            this.TextBoxAgregarTipoUsuario = new System.Windows.Forms.ComboBox();
+            this.TextBoxAgregarContrasenia = new System.Windows.Forms.TextBox();
+            this.TextBoxAgregarCorreoElectronico = new System.Windows.Forms.TextBox();
             this.LabelAgregarEnfermedad = new System.Windows.Forms.Label();
             this.LabelAgregarNombreDuenio = new System.Windows.Forms.Label();
-            this.TextBoxAgregarEstatura = new System.Windows.Forms.TextBox();
-            this.TextBoxAgregarPeso = new System.Windows.Forms.TextBox();
-            this.TextBoxAgregarEdad = new System.Windows.Forms.TextBox();
-            this.TextBoxAgregarRaza = new System.Windows.Forms.TextBox();
-            this.TextBoxAgregarEspecie = new System.Windows.Forms.TextBox();
+            this.TextBoxAgregarFechaContrato = new System.Windows.Forms.TextBox();
+            this.TextBoxAgregarTelefono = new System.Windows.Forms.TextBox();
+            this.TextBoxAgregarApeMaterno = new System.Windows.Forms.TextBox();
+            this.TextBoxAgregarApePaterno = new System.Windows.Forms.TextBox();
             this.TextBoxAgregarNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ButtonLimpiarDeAgregar = new System.Windows.Forms.Button();
@@ -73,14 +75,14 @@ namespace Veterinaria
             this.LabelAgregarEspecie = new System.Windows.Forms.Label();
             this.LabelAgregarNombre = new System.Windows.Forms.Label();
             this.PestañaConsultar = new System.Windows.Forms.TabPage();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.LabelContraConsultar = new System.Windows.Forms.Label();
+            this.LabelCorreoElecConsultar = new System.Windows.Forms.Label();
+            this.LabelTipoUsConsultar = new System.Windows.Forms.Label();
+            this.LabelFeContConsultar = new System.Windows.Forms.Label();
+            this.LabelTelefConsultar = new System.Windows.Forms.Label();
+            this.LabelConsultarNombre = new System.Windows.Forms.Label();
+            this.LabelApePatConsultar = new System.Windows.Forms.Label();
+            this.LabelApeMatConsultar = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -90,26 +92,24 @@ namespace Veterinaria
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.ButtonBuscarDeConsultar = new System.Windows.Forms.Button();
-            this.TextBoxConsultaID = new System.Windows.Forms.TextBox();
+            this.TextBoxConsultaCorreo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.PestañaModificar = new System.Windows.Forms.TabPage();
+            this.TextBoxTipoUsuMod = new System.Windows.Forms.ComboBox();
             this.ButtonActualizar = new System.Windows.Forms.Button();
             this.ButtonLimpiarDeModificar = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TextBoxContraMod = new System.Windows.Forms.TextBox();
+            this.TextBoxFeContMod = new System.Windows.Forms.TextBox();
+            this.TextBoxTelefMod = new System.Windows.Forms.TextBox();
+            this.TextBoxApeMatMod = new System.Windows.Forms.TextBox();
+            this.TextBoxApePatMod = new System.Windows.Forms.TextBox();
+            this.TextBoxNomMod = new System.Windows.Forms.TextBox();
+            this.BotonConsultaMod = new System.Windows.Forms.Button();
+            this.TextBoxCorreoMod = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -117,17 +117,17 @@ namespace Veterinaria
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.PestañaEliminar = new System.Windows.Forms.TabPage();
+            this.LabelEliminarContras = new System.Windows.Forms.Label();
+            this.LabelEliminarTipoUs = new System.Windows.Forms.Label();
+            this.LabelEliminarCorreo = new System.Windows.Forms.Label();
+            this.LabelEliminarFeCont = new System.Windows.Forms.Label();
+            this.LabelEliminarApeMat = new System.Windows.Forms.Label();
+            this.LabelEliminarTel = new System.Windows.Forms.Label();
+            this.LabelEliminarApePat = new System.Windows.Forms.Label();
+            this.LabelEliminarNombre = new System.Windows.Forms.Label();
             this.ButtonBorrar = new System.Windows.Forms.Button();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.BotonConsultarElim = new System.Windows.Forms.Button();
+            this.TextBoxEliminarCons = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -139,18 +139,21 @@ namespace Veterinaria
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.PestañaListar = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
+            this.DataGridListar = new ns1.BunifuCustomDataGrid();
+            this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TipoUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BotonListarUsuarios = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.TabuladorABC.SuspendLayout();
             this.PestañaAgregar.SuspendLayout();
             this.PestañaConsultar.SuspendLayout();
             this.PestañaModificar.SuspendLayout();
             this.PestañaEliminar.SuspendLayout();
             this.PestañaListar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridListar)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl1
@@ -159,6 +162,55 @@ namespace Veterinaria
             this.bunifuDragControl1.Horizontal = true;
             this.bunifuDragControl1.TargetControl = this.panel1;
             this.bunifuDragControl1.Vertical = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
+            this.panel1.Controls.Add(this.ButtonPowerOff);
+            this.panel1.Controls.Add(this.ButtonMinimizar);
+            this.panel1.Controls.Add(this.ButtonSalir);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(933, 41);
+            this.panel1.TabIndex = 13;
+            // 
+            // ButtonPowerOff
+            // 
+            this.ButtonPowerOff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonPowerOff.FlatAppearance.BorderSize = 0;
+            this.ButtonPowerOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonPowerOff.Image = ((System.Drawing.Image)(resources.GetObject("ButtonPowerOff.Image")));
+            this.ButtonPowerOff.Location = new System.Drawing.Point(839, 0);
+            this.ButtonPowerOff.Name = "ButtonPowerOff";
+            this.ButtonPowerOff.Size = new System.Drawing.Size(41, 38);
+            this.ButtonPowerOff.TabIndex = 13;
+            this.ButtonPowerOff.UseVisualStyleBackColor = true;
+            this.ButtonPowerOff.Click += new System.EventHandler(this.ButtonPowerOffClick);
+            // 
+            // ButtonMinimizar
+            // 
+            this.ButtonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonMinimizar.FlatAppearance.BorderSize = 0;
+            this.ButtonMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("ButtonMinimizar.Image")));
+            this.ButtonMinimizar.Location = new System.Drawing.Point(795, 14);
+            this.ButtonMinimizar.Name = "ButtonMinimizar";
+            this.ButtonMinimizar.Size = new System.Drawing.Size(38, 18);
+            this.ButtonMinimizar.TabIndex = 13;
+            this.ButtonMinimizar.UseVisualStyleBackColor = true;
+            // 
+            // ButtonSalir
+            // 
+            this.ButtonSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSalir.FlatAppearance.BorderSize = 0;
+            this.ButtonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSalir.Image = ((System.Drawing.Image)(resources.GetObject("ButtonSalir.Image")));
+            this.ButtonSalir.Location = new System.Drawing.Point(886, 8);
+            this.ButtonSalir.Name = "ButtonSalir";
+            this.ButtonSalir.Size = new System.Drawing.Size(36, 30);
+            this.ButtonSalir.TabIndex = 14;
+            this.ButtonSalir.UseVisualStyleBackColor = true;
+            this.ButtonSalir.Click += new System.EventHandler(this.ButtonSalir_Click);
             // 
             // bunifuElipse1
             // 
@@ -283,55 +335,6 @@ namespace Veterinaria
             this.ButtonAgregar.UseVisualStyleBackColor = true;
             this.ButtonAgregar.Click += new System.EventHandler(this.ButtonAgregarClick);
             // 
-            // ButtonSalir
-            // 
-            this.ButtonSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonSalir.FlatAppearance.BorderSize = 0;
-            this.ButtonSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonSalir.Image = ((System.Drawing.Image)(resources.GetObject("ButtonSalir.Image")));
-            this.ButtonSalir.Location = new System.Drawing.Point(886, 8);
-            this.ButtonSalir.Name = "ButtonSalir";
-            this.ButtonSalir.Size = new System.Drawing.Size(36, 30);
-            this.ButtonSalir.TabIndex = 14;
-            this.ButtonSalir.UseVisualStyleBackColor = true;
-            this.ButtonSalir.Click += new System.EventHandler(this.ButtonSalir_Click);
-            // 
-            // ButtonMinimizar
-            // 
-            this.ButtonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonMinimizar.FlatAppearance.BorderSize = 0;
-            this.ButtonMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("ButtonMinimizar.Image")));
-            this.ButtonMinimizar.Location = new System.Drawing.Point(795, 14);
-            this.ButtonMinimizar.Name = "ButtonMinimizar";
-            this.ButtonMinimizar.Size = new System.Drawing.Size(38, 18);
-            this.ButtonMinimizar.TabIndex = 13;
-            this.ButtonMinimizar.UseVisualStyleBackColor = true;
-            // 
-            // ButtonPowerOff
-            // 
-            this.ButtonPowerOff.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonPowerOff.FlatAppearance.BorderSize = 0;
-            this.ButtonPowerOff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonPowerOff.Image = ((System.Drawing.Image)(resources.GetObject("ButtonPowerOff.Image")));
-            this.ButtonPowerOff.Location = new System.Drawing.Point(839, 0);
-            this.ButtonPowerOff.Name = "ButtonPowerOff";
-            this.ButtonPowerOff.Size = new System.Drawing.Size(41, 38);
-            this.ButtonPowerOff.TabIndex = 13;
-            this.ButtonPowerOff.UseVisualStyleBackColor = true;
-            this.ButtonPowerOff.Click += new System.EventHandler(this.ButtonPowerOffClick);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
-            this.panel1.Controls.Add(this.ButtonPowerOff);
-            this.panel1.Controls.Add(this.ButtonMinimizar);
-            this.panel1.Controls.Add(this.ButtonSalir);
-            this.panel1.Location = new System.Drawing.Point(0, -2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(933, 41);
-            this.panel1.TabIndex = 13;
-            // 
             // TabuladorABC
             // 
             this.TabuladorABC.Controls.Add(this.PestañaAgregar);
@@ -348,15 +351,15 @@ namespace Veterinaria
             // PestañaAgregar
             // 
             this.PestañaAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarEnfermedad);
-            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarDueño);
+            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarTipoUsuario);
+            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarContrasenia);
+            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarCorreoElectronico);
             this.PestañaAgregar.Controls.Add(this.LabelAgregarEnfermedad);
             this.PestañaAgregar.Controls.Add(this.LabelAgregarNombreDuenio);
-            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarEstatura);
-            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarPeso);
-            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarEdad);
-            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarRaza);
-            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarEspecie);
+            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarFechaContrato);
+            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarTelefono);
+            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarApeMaterno);
+            this.PestañaAgregar.Controls.Add(this.TextBoxAgregarApePaterno);
             this.PestañaAgregar.Controls.Add(this.TextBoxAgregarNombre);
             this.PestañaAgregar.Controls.Add(this.label2);
             this.PestañaAgregar.Controls.Add(this.ButtonLimpiarDeAgregar);
@@ -375,19 +378,28 @@ namespace Veterinaria
             this.PestañaAgregar.TabIndex = 0;
             this.PestañaAgregar.Text = "PestañaAgregar";
             // 
-            // TextBoxAgregarEnfermedad
+            // TextBoxAgregarTipoUsuario
             // 
-            this.TextBoxAgregarEnfermedad.Location = new System.Drawing.Point(255, 411);
-            this.TextBoxAgregarEnfermedad.Name = "TextBoxAgregarEnfermedad";
-            this.TextBoxAgregarEnfermedad.Size = new System.Drawing.Size(281, 22);
-            this.TextBoxAgregarEnfermedad.TabIndex = 41;
+            this.TextBoxAgregarTipoUsuario.FormattingEnabled = true;
+            this.TextBoxAgregarTipoUsuario.Location = new System.Drawing.Point(255, 325);
+            this.TextBoxAgregarTipoUsuario.Name = "TextBoxAgregarTipoUsuario";
+            this.TextBoxAgregarTipoUsuario.Size = new System.Drawing.Size(281, 24);
+            this.TextBoxAgregarTipoUsuario.TabIndex = 42;
             // 
-            // TextBoxAgregarDueño
+            // TextBoxAgregarContrasenia
             // 
-            this.TextBoxAgregarDueño.Location = new System.Drawing.Point(255, 368);
-            this.TextBoxAgregarDueño.Name = "TextBoxAgregarDueño";
-            this.TextBoxAgregarDueño.Size = new System.Drawing.Size(281, 22);
-            this.TextBoxAgregarDueño.TabIndex = 40;
+            this.TextBoxAgregarContrasenia.Location = new System.Drawing.Point(255, 411);
+            this.TextBoxAgregarContrasenia.Name = "TextBoxAgregarContrasenia";
+            this.TextBoxAgregarContrasenia.PasswordChar = '*';
+            this.TextBoxAgregarContrasenia.Size = new System.Drawing.Size(281, 22);
+            this.TextBoxAgregarContrasenia.TabIndex = 41;
+            // 
+            // TextBoxAgregarCorreoElectronico
+            // 
+            this.TextBoxAgregarCorreoElectronico.Location = new System.Drawing.Point(255, 368);
+            this.TextBoxAgregarCorreoElectronico.Name = "TextBoxAgregarCorreoElectronico";
+            this.TextBoxAgregarCorreoElectronico.Size = new System.Drawing.Size(281, 22);
+            this.TextBoxAgregarCorreoElectronico.TabIndex = 40;
             // 
             // LabelAgregarEnfermedad
             // 
@@ -411,40 +423,33 @@ namespace Veterinaria
             this.LabelAgregarNombreDuenio.TabIndex = 38;
             this.LabelAgregarNombreDuenio.Text = "Correo electronico:";
             // 
-            // TextBoxAgregarEstatura
+            // TextBoxAgregarFechaContrato
             // 
-            this.TextBoxAgregarEstatura.Location = new System.Drawing.Point(255, 325);
-            this.TextBoxAgregarEstatura.Name = "TextBoxAgregarEstatura";
-            this.TextBoxAgregarEstatura.Size = new System.Drawing.Size(281, 22);
-            this.TextBoxAgregarEstatura.TabIndex = 36;
+            this.TextBoxAgregarFechaContrato.Location = new System.Drawing.Point(255, 282);
+            this.TextBoxAgregarFechaContrato.Name = "TextBoxAgregarFechaContrato";
+            this.TextBoxAgregarFechaContrato.Size = new System.Drawing.Size(281, 22);
+            this.TextBoxAgregarFechaContrato.TabIndex = 35;
             // 
-            // TextBoxAgregarPeso
+            // TextBoxAgregarTelefono
             // 
-            this.TextBoxAgregarPeso.Location = new System.Drawing.Point(255, 282);
-            this.TextBoxAgregarPeso.Name = "TextBoxAgregarPeso";
-            this.TextBoxAgregarPeso.Size = new System.Drawing.Size(281, 22);
-            this.TextBoxAgregarPeso.TabIndex = 35;
+            this.TextBoxAgregarTelefono.Location = new System.Drawing.Point(255, 239);
+            this.TextBoxAgregarTelefono.Name = "TextBoxAgregarTelefono";
+            this.TextBoxAgregarTelefono.Size = new System.Drawing.Size(281, 22);
+            this.TextBoxAgregarTelefono.TabIndex = 34;
             // 
-            // TextBoxAgregarEdad
+            // TextBoxAgregarApeMaterno
             // 
-            this.TextBoxAgregarEdad.Location = new System.Drawing.Point(255, 239);
-            this.TextBoxAgregarEdad.Name = "TextBoxAgregarEdad";
-            this.TextBoxAgregarEdad.Size = new System.Drawing.Size(281, 22);
-            this.TextBoxAgregarEdad.TabIndex = 34;
+            this.TextBoxAgregarApeMaterno.Location = new System.Drawing.Point(255, 196);
+            this.TextBoxAgregarApeMaterno.Name = "TextBoxAgregarApeMaterno";
+            this.TextBoxAgregarApeMaterno.Size = new System.Drawing.Size(281, 22);
+            this.TextBoxAgregarApeMaterno.TabIndex = 33;
             // 
-            // TextBoxAgregarRaza
+            // TextBoxAgregarApePaterno
             // 
-            this.TextBoxAgregarRaza.Location = new System.Drawing.Point(255, 196);
-            this.TextBoxAgregarRaza.Name = "TextBoxAgregarRaza";
-            this.TextBoxAgregarRaza.Size = new System.Drawing.Size(281, 22);
-            this.TextBoxAgregarRaza.TabIndex = 33;
-            // 
-            // TextBoxAgregarEspecie
-            // 
-            this.TextBoxAgregarEspecie.Location = new System.Drawing.Point(255, 153);
-            this.TextBoxAgregarEspecie.Name = "TextBoxAgregarEspecie";
-            this.TextBoxAgregarEspecie.Size = new System.Drawing.Size(281, 22);
-            this.TextBoxAgregarEspecie.TabIndex = 32;
+            this.TextBoxAgregarApePaterno.Location = new System.Drawing.Point(255, 153);
+            this.TextBoxAgregarApePaterno.Name = "TextBoxAgregarApePaterno";
+            this.TextBoxAgregarApePaterno.Size = new System.Drawing.Size(281, 22);
+            this.TextBoxAgregarApePaterno.TabIndex = 32;
             // 
             // TextBoxAgregarNombre
             // 
@@ -476,6 +481,7 @@ namespace Veterinaria
             this.ButtonLimpiarDeAgregar.TabIndex = 28;
             this.ButtonLimpiarDeAgregar.Text = "Limpiar";
             this.ButtonLimpiarDeAgregar.UseVisualStyleBackColor = false;
+            this.ButtonLimpiarDeAgregar.Click += new System.EventHandler(this.ButtonLimpiarDeAgregar_Click);
             // 
             // ButtonGuardar
             // 
@@ -489,6 +495,7 @@ namespace Veterinaria
             this.ButtonGuardar.TabIndex = 27;
             this.ButtonGuardar.Text = "Guardar";
             this.ButtonGuardar.UseVisualStyleBackColor = false;
+            this.ButtonGuardar.Click += new System.EventHandler(this.ButtonGuardar_Click);
             // 
             // LabelAgregarEstatura
             // 
@@ -559,14 +566,14 @@ namespace Veterinaria
             // PestañaConsultar
             // 
             this.PestañaConsultar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.PestañaConsultar.Controls.Add(this.label17);
-            this.PestañaConsultar.Controls.Add(this.label16);
-            this.PestañaConsultar.Controls.Add(this.label15);
-            this.PestañaConsultar.Controls.Add(this.label14);
-            this.PestañaConsultar.Controls.Add(this.label12);
-            this.PestañaConsultar.Controls.Add(this.label19);
-            this.PestañaConsultar.Controls.Add(this.label18);
-            this.PestañaConsultar.Controls.Add(this.label11);
+            this.PestañaConsultar.Controls.Add(this.LabelContraConsultar);
+            this.PestañaConsultar.Controls.Add(this.LabelCorreoElecConsultar);
+            this.PestañaConsultar.Controls.Add(this.LabelTipoUsConsultar);
+            this.PestañaConsultar.Controls.Add(this.LabelFeContConsultar);
+            this.PestañaConsultar.Controls.Add(this.LabelTelefConsultar);
+            this.PestañaConsultar.Controls.Add(this.LabelConsultarNombre);
+            this.PestañaConsultar.Controls.Add(this.LabelApePatConsultar);
+            this.PestañaConsultar.Controls.Add(this.LabelApeMatConsultar);
             this.PestañaConsultar.Controls.Add(this.label1);
             this.PestañaConsultar.Controls.Add(this.label4);
             this.PestañaConsultar.Controls.Add(this.label5);
@@ -576,7 +583,7 @@ namespace Veterinaria
             this.PestañaConsultar.Controls.Add(this.label9);
             this.PestañaConsultar.Controls.Add(this.label10);
             this.PestañaConsultar.Controls.Add(this.ButtonBuscarDeConsultar);
-            this.PestañaConsultar.Controls.Add(this.TextBoxConsultaID);
+            this.PestañaConsultar.Controls.Add(this.TextBoxConsultaCorreo);
             this.PestañaConsultar.Controls.Add(this.label3);
             this.PestañaConsultar.Controls.Add(this.label13);
             this.PestañaConsultar.Location = new System.Drawing.Point(4, 22);
@@ -585,93 +592,93 @@ namespace Veterinaria
             this.PestañaConsultar.TabIndex = 0;
             this.PestañaConsultar.Text = "PestañaConsultar";
             // 
-            // label17
+            // LabelContraConsultar
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(262, 481);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(17, 16);
-            this.label17.TabIndex = 64;
-            this.label17.Text = "...";
+            this.LabelContraConsultar.AutoSize = true;
+            this.LabelContraConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelContraConsultar.ForeColor = System.Drawing.Color.White;
+            this.LabelContraConsultar.Location = new System.Drawing.Point(262, 481);
+            this.LabelContraConsultar.Name = "LabelContraConsultar";
+            this.LabelContraConsultar.Size = new System.Drawing.Size(17, 16);
+            this.LabelContraConsultar.TabIndex = 64;
+            this.LabelContraConsultar.Text = "...";
             // 
-            // label16
+            // LabelCorreoElecConsultar
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(262, 438);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(17, 16);
-            this.label16.TabIndex = 64;
-            this.label16.Text = "...";
+            this.LabelCorreoElecConsultar.AutoSize = true;
+            this.LabelCorreoElecConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCorreoElecConsultar.ForeColor = System.Drawing.Color.White;
+            this.LabelCorreoElecConsultar.Location = new System.Drawing.Point(262, 438);
+            this.LabelCorreoElecConsultar.Name = "LabelCorreoElecConsultar";
+            this.LabelCorreoElecConsultar.Size = new System.Drawing.Size(17, 16);
+            this.LabelCorreoElecConsultar.TabIndex = 64;
+            this.LabelCorreoElecConsultar.Text = "...";
             // 
-            // label15
+            // LabelTipoUsConsultar
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(262, 395);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 16);
-            this.label15.TabIndex = 64;
-            this.label15.Text = "...";
+            this.LabelTipoUsConsultar.AutoSize = true;
+            this.LabelTipoUsConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTipoUsConsultar.ForeColor = System.Drawing.Color.White;
+            this.LabelTipoUsConsultar.Location = new System.Drawing.Point(262, 395);
+            this.LabelTipoUsConsultar.Name = "LabelTipoUsConsultar";
+            this.LabelTipoUsConsultar.Size = new System.Drawing.Size(17, 16);
+            this.LabelTipoUsConsultar.TabIndex = 64;
+            this.LabelTipoUsConsultar.Text = "...";
             // 
-            // label14
+            // LabelFeContConsultar
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(262, 352);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 16);
-            this.label14.TabIndex = 64;
-            this.label14.Text = "...";
+            this.LabelFeContConsultar.AutoSize = true;
+            this.LabelFeContConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelFeContConsultar.ForeColor = System.Drawing.Color.White;
+            this.LabelFeContConsultar.Location = new System.Drawing.Point(262, 352);
+            this.LabelFeContConsultar.Name = "LabelFeContConsultar";
+            this.LabelFeContConsultar.Size = new System.Drawing.Size(17, 16);
+            this.LabelFeContConsultar.TabIndex = 64;
+            this.LabelFeContConsultar.Text = "...";
             // 
-            // label12
+            // LabelTelefConsultar
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(262, 309);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(17, 16);
-            this.label12.TabIndex = 64;
-            this.label12.Text = "...";
+            this.LabelTelefConsultar.AutoSize = true;
+            this.LabelTelefConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTelefConsultar.ForeColor = System.Drawing.Color.White;
+            this.LabelTelefConsultar.Location = new System.Drawing.Point(262, 309);
+            this.LabelTelefConsultar.Name = "LabelTelefConsultar";
+            this.LabelTelefConsultar.Size = new System.Drawing.Size(17, 16);
+            this.LabelTelefConsultar.TabIndex = 64;
+            this.LabelTelefConsultar.Text = "...";
             // 
-            // label19
+            // LabelConsultarNombre
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(262, 180);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(17, 16);
-            this.label19.TabIndex = 64;
-            this.label19.Text = "...";
+            this.LabelConsultarNombre.AutoSize = true;
+            this.LabelConsultarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelConsultarNombre.ForeColor = System.Drawing.Color.White;
+            this.LabelConsultarNombre.Location = new System.Drawing.Point(262, 180);
+            this.LabelConsultarNombre.Name = "LabelConsultarNombre";
+            this.LabelConsultarNombre.Size = new System.Drawing.Size(17, 16);
+            this.LabelConsultarNombre.TabIndex = 64;
+            this.LabelConsultarNombre.Text = "...";
             // 
-            // label18
+            // LabelApePatConsultar
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(262, 223);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(17, 16);
-            this.label18.TabIndex = 64;
-            this.label18.Text = "...";
+            this.LabelApePatConsultar.AutoSize = true;
+            this.LabelApePatConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelApePatConsultar.ForeColor = System.Drawing.Color.White;
+            this.LabelApePatConsultar.Location = new System.Drawing.Point(262, 223);
+            this.LabelApePatConsultar.Name = "LabelApePatConsultar";
+            this.LabelApePatConsultar.Size = new System.Drawing.Size(17, 16);
+            this.LabelApePatConsultar.TabIndex = 64;
+            this.LabelApePatConsultar.Text = "...";
             // 
-            // label11
+            // LabelApeMatConsultar
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(262, 266);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(17, 16);
-            this.label11.TabIndex = 64;
-            this.label11.Text = "...";
+            this.LabelApeMatConsultar.AutoSize = true;
+            this.LabelApeMatConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelApeMatConsultar.ForeColor = System.Drawing.Color.White;
+            this.LabelApeMatConsultar.Location = new System.Drawing.Point(262, 266);
+            this.LabelApeMatConsultar.Name = "LabelApeMatConsultar";
+            this.LabelApeMatConsultar.Size = new System.Drawing.Size(17, 16);
+            this.LabelApeMatConsultar.TabIndex = 64;
+            this.LabelApeMatConsultar.Text = "...";
             // 
             // label1
             // 
@@ -773,13 +780,14 @@ namespace Veterinaria
             this.ButtonBuscarDeConsultar.TabIndex = 47;
             this.ButtonBuscarDeConsultar.Text = "Buscar";
             this.ButtonBuscarDeConsultar.UseVisualStyleBackColor = false;
+            this.ButtonBuscarDeConsultar.Click += new System.EventHandler(this.ButtonBuscarDeConsultar_Click);
             // 
-            // TextBoxConsultaID
+            // TextBoxConsultaCorreo
             // 
-            this.TextBoxConsultaID.Location = new System.Drawing.Point(193, 92);
-            this.TextBoxConsultaID.Name = "TextBoxConsultaID";
-            this.TextBoxConsultaID.Size = new System.Drawing.Size(344, 20);
-            this.TextBoxConsultaID.TabIndex = 46;
+            this.TextBoxConsultaCorreo.Location = new System.Drawing.Point(193, 92);
+            this.TextBoxConsultaCorreo.Name = "TextBoxConsultaCorreo";
+            this.TextBoxConsultaCorreo.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxConsultaCorreo.TabIndex = 46;
             // 
             // label3
             // 
@@ -806,22 +814,20 @@ namespace Veterinaria
             // PestañaModificar
             // 
             this.PestañaModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.PestañaModificar.Controls.Add(this.TextBoxTipoUsuMod);
             this.PestañaModificar.Controls.Add(this.ButtonActualizar);
             this.PestañaModificar.Controls.Add(this.ButtonLimpiarDeModificar);
-            this.PestañaModificar.Controls.Add(this.textBox9);
-            this.PestañaModificar.Controls.Add(this.textBox8);
-            this.PestañaModificar.Controls.Add(this.textBox7);
-            this.PestañaModificar.Controls.Add(this.textBox6);
-            this.PestañaModificar.Controls.Add(this.textBox5);
-            this.PestañaModificar.Controls.Add(this.textBox4);
-            this.PestañaModificar.Controls.Add(this.textBox3);
-            this.PestañaModificar.Controls.Add(this.textBox2);
-            this.PestañaModificar.Controls.Add(this.button2);
-            this.PestañaModificar.Controls.Add(this.textBox1);
+            this.PestañaModificar.Controls.Add(this.TextBoxContraMod);
+            this.PestañaModificar.Controls.Add(this.TextBoxFeContMod);
+            this.PestañaModificar.Controls.Add(this.TextBoxTelefMod);
+            this.PestañaModificar.Controls.Add(this.TextBoxApeMatMod);
+            this.PestañaModificar.Controls.Add(this.TextBoxApePatMod);
+            this.PestañaModificar.Controls.Add(this.TextBoxNomMod);
+            this.PestañaModificar.Controls.Add(this.BotonConsultaMod);
+            this.PestañaModificar.Controls.Add(this.TextBoxCorreoMod);
             this.PestañaModificar.Controls.Add(this.label36);
             this.PestañaModificar.Controls.Add(this.label37);
             this.PestañaModificar.Controls.Add(this.label28);
-            this.PestañaModificar.Controls.Add(this.label29);
             this.PestañaModificar.Controls.Add(this.label30);
             this.PestañaModificar.Controls.Add(this.label31);
             this.PestañaModificar.Controls.Add(this.label32);
@@ -833,6 +839,14 @@ namespace Veterinaria
             this.PestañaModificar.Size = new System.Drawing.Size(680, 557);
             this.PestañaModificar.TabIndex = 1;
             this.PestañaModificar.Text = "PestañaModificar";
+            // 
+            // TextBoxTipoUsuMod
+            // 
+            this.TextBoxTipoUsuMod.FormattingEnabled = true;
+            this.TextBoxTipoUsuMod.Location = new System.Drawing.Point(258, 394);
+            this.TextBoxTipoUsuMod.Name = "TextBoxTipoUsuMod";
+            this.TextBoxTipoUsuMod.Size = new System.Drawing.Size(343, 21);
+            this.TextBoxTipoUsuMod.TabIndex = 88;
             // 
             // ButtonActualizar
             // 
@@ -846,6 +860,7 @@ namespace Veterinaria
             this.ButtonActualizar.TabIndex = 86;
             this.ButtonActualizar.Text = "Actualizar";
             this.ButtonActualizar.UseVisualStyleBackColor = false;
+            this.ButtonActualizar.Click += new System.EventHandler(this.ButtonActualizar_Click);
             // 
             // ButtonLimpiarDeModificar
             // 
@@ -859,82 +874,72 @@ namespace Veterinaria
             this.ButtonLimpiarDeModificar.TabIndex = 87;
             this.ButtonLimpiarDeModificar.Text = "Limpiar";
             this.ButtonLimpiarDeModificar.UseVisualStyleBackColor = false;
+            this.ButtonLimpiarDeModificar.Click += new System.EventHandler(this.ButtonLimpiarDeModificar_Click);
             // 
-            // textBox9
+            // TextBoxContraMod
             // 
-            this.textBox9.Location = new System.Drawing.Point(258, 477);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(344, 20);
-            this.textBox9.TabIndex = 85;
+            this.TextBoxContraMod.Location = new System.Drawing.Point(258, 432);
+            this.TextBoxContraMod.Name = "TextBoxContraMod";
+            this.TextBoxContraMod.PasswordChar = '*';
+            this.TextBoxContraMod.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxContraMod.TabIndex = 85;
             // 
-            // textBox8
+            // TextBoxFeContMod
             // 
-            this.textBox8.Location = new System.Drawing.Point(258, 434);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(344, 20);
-            this.textBox8.TabIndex = 85;
+            this.TextBoxFeContMod.Location = new System.Drawing.Point(258, 351);
+            this.TextBoxFeContMod.Name = "TextBoxFeContMod";
+            this.TextBoxFeContMod.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxFeContMod.TabIndex = 85;
             // 
-            // textBox7
+            // TextBoxTelefMod
             // 
-            this.textBox7.Location = new System.Drawing.Point(258, 391);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(344, 20);
-            this.textBox7.TabIndex = 85;
+            this.TextBoxTelefMod.Location = new System.Drawing.Point(258, 308);
+            this.TextBoxTelefMod.Name = "TextBoxTelefMod";
+            this.TextBoxTelefMod.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxTelefMod.TabIndex = 85;
             // 
-            // textBox6
+            // TextBoxApeMatMod
             // 
-            this.textBox6.Location = new System.Drawing.Point(258, 351);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(344, 20);
-            this.textBox6.TabIndex = 85;
+            this.TextBoxApeMatMod.Location = new System.Drawing.Point(258, 265);
+            this.TextBoxApeMatMod.Name = "TextBoxApeMatMod";
+            this.TextBoxApeMatMod.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxApeMatMod.TabIndex = 85;
             // 
-            // textBox5
+            // TextBoxApePatMod
             // 
-            this.textBox5.Location = new System.Drawing.Point(258, 308);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(344, 20);
-            this.textBox5.TabIndex = 85;
+            this.TextBoxApePatMod.Location = new System.Drawing.Point(258, 222);
+            this.TextBoxApePatMod.Name = "TextBoxApePatMod";
+            this.TextBoxApePatMod.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxApePatMod.TabIndex = 85;
             // 
-            // textBox4
+            // TextBoxNomMod
             // 
-            this.textBox4.Location = new System.Drawing.Point(258, 265);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(344, 20);
-            this.textBox4.TabIndex = 85;
+            this.TextBoxNomMod.AccessibleRole = System.Windows.Forms.AccessibleRole.OutlineButton;
+            this.TextBoxNomMod.Location = new System.Drawing.Point(258, 180);
+            this.TextBoxNomMod.Name = "TextBoxNomMod";
+            this.TextBoxNomMod.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxNomMod.TabIndex = 85;
             // 
-            // textBox3
+            // BotonConsultaMod
             // 
-            this.textBox3.Location = new System.Drawing.Point(258, 222);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(344, 20);
-            this.textBox3.TabIndex = 85;
+            this.BotonConsultaMod.BackColor = System.Drawing.Color.SteelBlue;
+            this.BotonConsultaMod.FlatAppearance.BorderSize = 0;
+            this.BotonConsultaMod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonConsultaMod.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BotonConsultaMod.Location = new System.Drawing.Point(415, 127);
+            this.BotonConsultaMod.Name = "BotonConsultaMod";
+            this.BotonConsultaMod.Size = new System.Drawing.Size(122, 28);
+            this.BotonConsultaMod.TabIndex = 84;
+            this.BotonConsultaMod.Text = "Buscar";
+            this.BotonConsultaMod.UseVisualStyleBackColor = false;
+            this.BotonConsultaMod.Click += new System.EventHandler(this.BotonConsultaMod_Click);
             // 
-            // textBox2
+            // TextBoxCorreoMod
             // 
-            this.textBox2.Location = new System.Drawing.Point(258, 180);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(344, 20);
-            this.textBox2.TabIndex = 85;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(415, 127);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 28);
-            this.button2.TabIndex = 84;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(193, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(344, 20);
-            this.textBox1.TabIndex = 83;
+            this.TextBoxCorreoMod.Location = new System.Drawing.Point(193, 92);
+            this.TextBoxCorreoMod.Name = "TextBoxCorreoMod";
+            this.TextBoxCorreoMod.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxCorreoMod.TabIndex = 83;
             // 
             // label36
             // 
@@ -963,22 +968,11 @@ namespace Veterinaria
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label28.ForeColor = System.Drawing.Color.White;
-            this.label28.Location = new System.Drawing.Point(135, 481);
+            this.label28.Location = new System.Drawing.Point(135, 436);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(77, 16);
             this.label28.TabIndex = 72;
             this.label28.Text = "Contraseña";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.White;
-            this.label29.Location = new System.Drawing.Point(135, 438);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(121, 16);
-            this.label29.TabIndex = 71;
-            this.label29.Text = "Correo electronico:";
             // 
             // label30
             // 
@@ -1049,17 +1043,17 @@ namespace Veterinaria
             // PestañaEliminar
             // 
             this.PestañaEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarContras);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarTipoUs);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarCorreo);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarFeCont);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarApeMat);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarTel);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarApePat);
+            this.PestañaEliminar.Controls.Add(this.LabelEliminarNombre);
             this.PestañaEliminar.Controls.Add(this.ButtonBorrar);
-            this.PestañaEliminar.Controls.Add(this.textBox10);
-            this.PestañaEliminar.Controls.Add(this.textBox11);
-            this.PestañaEliminar.Controls.Add(this.textBox12);
-            this.PestañaEliminar.Controls.Add(this.textBox13);
-            this.PestañaEliminar.Controls.Add(this.textBox14);
-            this.PestañaEliminar.Controls.Add(this.textBox15);
-            this.PestañaEliminar.Controls.Add(this.textBox16);
-            this.PestañaEliminar.Controls.Add(this.textBox17);
-            this.PestañaEliminar.Controls.Add(this.button5);
-            this.PestañaEliminar.Controls.Add(this.textBox18);
+            this.PestañaEliminar.Controls.Add(this.BotonConsultarElim);
+            this.PestañaEliminar.Controls.Add(this.TextBoxEliminarCons);
             this.PestañaEliminar.Controls.Add(this.label20);
             this.PestañaEliminar.Controls.Add(this.label21);
             this.PestañaEliminar.Controls.Add(this.label22);
@@ -1076,9 +1070,90 @@ namespace Veterinaria
             this.PestañaEliminar.TabIndex = 2;
             this.PestañaEliminar.Text = "PestañaEliminar";
             // 
+            // LabelEliminarContras
+            // 
+            this.LabelEliminarContras.AutoSize = true;
+            this.LabelEliminarContras.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarContras.Location = new System.Drawing.Point(260, 484);
+            this.LabelEliminarContras.Name = "LabelEliminarContras";
+            this.LabelEliminarContras.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarContras.TabIndex = 109;
+            this.LabelEliminarContras.Text = "...";
+            // 
+            // LabelEliminarTipoUs
+            // 
+            this.LabelEliminarTipoUs.AutoSize = true;
+            this.LabelEliminarTipoUs.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarTipoUs.Location = new System.Drawing.Point(260, 398);
+            this.LabelEliminarTipoUs.Name = "LabelEliminarTipoUs";
+            this.LabelEliminarTipoUs.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarTipoUs.TabIndex = 109;
+            this.LabelEliminarTipoUs.Text = "...";
+            // 
+            // LabelEliminarCorreo
+            // 
+            this.LabelEliminarCorreo.AutoSize = true;
+            this.LabelEliminarCorreo.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarCorreo.Location = new System.Drawing.Point(260, 441);
+            this.LabelEliminarCorreo.Name = "LabelEliminarCorreo";
+            this.LabelEliminarCorreo.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarCorreo.TabIndex = 109;
+            this.LabelEliminarCorreo.Text = "...";
+            // 
+            // LabelEliminarFeCont
+            // 
+            this.LabelEliminarFeCont.AutoSize = true;
+            this.LabelEliminarFeCont.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarFeCont.Location = new System.Drawing.Point(260, 355);
+            this.LabelEliminarFeCont.Name = "LabelEliminarFeCont";
+            this.LabelEliminarFeCont.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarFeCont.TabIndex = 109;
+            this.LabelEliminarFeCont.Text = "...";
+            // 
+            // LabelEliminarApeMat
+            // 
+            this.LabelEliminarApeMat.AutoSize = true;
+            this.LabelEliminarApeMat.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarApeMat.Location = new System.Drawing.Point(260, 269);
+            this.LabelEliminarApeMat.Name = "LabelEliminarApeMat";
+            this.LabelEliminarApeMat.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarApeMat.TabIndex = 109;
+            this.LabelEliminarApeMat.Text = "...";
+            // 
+            // LabelEliminarTel
+            // 
+            this.LabelEliminarTel.AutoSize = true;
+            this.LabelEliminarTel.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarTel.Location = new System.Drawing.Point(260, 314);
+            this.LabelEliminarTel.Name = "LabelEliminarTel";
+            this.LabelEliminarTel.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarTel.TabIndex = 109;
+            this.LabelEliminarTel.Text = "...";
+            // 
+            // LabelEliminarApePat
+            // 
+            this.LabelEliminarApePat.AutoSize = true;
+            this.LabelEliminarApePat.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarApePat.Location = new System.Drawing.Point(260, 226);
+            this.LabelEliminarApePat.Name = "LabelEliminarApePat";
+            this.LabelEliminarApePat.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarApePat.TabIndex = 109;
+            this.LabelEliminarApePat.Text = "...";
+            // 
+            // LabelEliminarNombre
+            // 
+            this.LabelEliminarNombre.AutoSize = true;
+            this.LabelEliminarNombre.ForeColor = System.Drawing.Color.White;
+            this.LabelEliminarNombre.Location = new System.Drawing.Point(260, 185);
+            this.LabelEliminarNombre.Name = "LabelEliminarNombre";
+            this.LabelEliminarNombre.Size = new System.Drawing.Size(16, 13);
+            this.LabelEliminarNombre.TabIndex = 109;
+            this.LabelEliminarNombre.Text = "...";
+            // 
             // ButtonBorrar
             // 
             this.ButtonBorrar.BackColor = System.Drawing.Color.Crimson;
+            this.ButtonBorrar.Enabled = false;
             this.ButtonBorrar.FlatAppearance.BorderSize = 0;
             this.ButtonBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonBorrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -1086,84 +1161,32 @@ namespace Veterinaria
             this.ButtonBorrar.Name = "ButtonBorrar";
             this.ButtonBorrar.Size = new System.Drawing.Size(122, 38);
             this.ButtonBorrar.TabIndex = 108;
+            this.ButtonBorrar.TabStop = false;
             this.ButtonBorrar.Text = "Borrar";
+            this.ButtonBorrar.UseCompatibleTextRendering = true;
             this.ButtonBorrar.UseVisualStyleBackColor = false;
+            this.ButtonBorrar.Click += new System.EventHandler(this.ButtonBorrar_Click);
             // 
-            // textBox10
+            // BotonConsultarElim
             // 
-            this.textBox10.Location = new System.Drawing.Point(258, 477);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(344, 20);
-            this.textBox10.TabIndex = 106;
+            this.BotonConsultarElim.BackColor = System.Drawing.Color.SteelBlue;
+            this.BotonConsultarElim.FlatAppearance.BorderSize = 0;
+            this.BotonConsultarElim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonConsultarElim.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BotonConsultarElim.Location = new System.Drawing.Point(415, 127);
+            this.BotonConsultarElim.Name = "BotonConsultarElim";
+            this.BotonConsultarElim.Size = new System.Drawing.Size(122, 28);
+            this.BotonConsultarElim.TabIndex = 99;
+            this.BotonConsultarElim.Text = "Buscar";
+            this.BotonConsultarElim.UseVisualStyleBackColor = false;
+            this.BotonConsultarElim.Click += new System.EventHandler(this.BotonConsultarElim_Click);
             // 
-            // textBox11
+            // TextBoxEliminarCons
             // 
-            this.textBox11.Location = new System.Drawing.Point(258, 434);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(344, 20);
-            this.textBox11.TabIndex = 105;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(258, 391);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(344, 20);
-            this.textBox12.TabIndex = 104;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(258, 351);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(344, 20);
-            this.textBox13.TabIndex = 103;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(258, 308);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(344, 20);
-            this.textBox14.TabIndex = 102;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(258, 265);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(344, 20);
-            this.textBox15.TabIndex = 101;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(258, 222);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(344, 20);
-            this.textBox16.TabIndex = 100;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(258, 180);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(344, 20);
-            this.textBox17.TabIndex = 107;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.SteelBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button5.Location = new System.Drawing.Point(415, 127);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(122, 28);
-            this.button5.TabIndex = 99;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(193, 92);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(344, 20);
-            this.textBox18.TabIndex = 98;
+            this.TextBoxEliminarCons.Location = new System.Drawing.Point(193, 92);
+            this.TextBoxEliminarCons.Name = "TextBoxEliminarCons";
+            this.TextBoxEliminarCons.Size = new System.Drawing.Size(344, 20);
+            this.TextBoxEliminarCons.TabIndex = 98;
             // 
             // label20
             // 
@@ -1278,27 +1301,83 @@ namespace Veterinaria
             // PestañaListar
             // 
             this.PestañaListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
-            this.PestañaListar.Controls.Add(this.button3);
+            this.PestañaListar.Controls.Add(this.DataGridListar);
+            this.PestañaListar.Controls.Add(this.BotonListarUsuarios);
             this.PestañaListar.Controls.Add(this.label48);
-            this.PestañaListar.Controls.Add(this.dataGridView1);
             this.PestañaListar.Location = new System.Drawing.Point(4, 22);
             this.PestañaListar.Name = "PestañaListar";
             this.PestañaListar.Size = new System.Drawing.Size(680, 557);
             this.PestañaListar.TabIndex = 3;
             this.PestañaListar.Text = "PestañaListar";
             // 
-            // button3
+            // DataGridListar
             // 
-            this.button3.BackColor = System.Drawing.Color.Tomato;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(529, 445);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 38);
-            this.button3.TabIndex = 71;
-            this.button3.Text = "Listar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.DataGridListar.AllowUserToAddRows = false;
+            this.DataGridListar.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataGridListar.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridListar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridListar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(49)))), ((int)(((byte)(69)))));
+            this.DataGridListar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataGridListar.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridListar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.DataGridListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridListar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Correo,
+            this.Nombre,
+            this.TipoUsuario});
+            this.DataGridListar.DoubleBuffered = true;
+            this.DataGridListar.EnableHeadersVisualStyles = false;
+            this.DataGridListar.GridColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.DataGridListar.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
+            this.DataGridListar.HeaderForeColor = System.Drawing.Color.White;
+            this.DataGridListar.Location = new System.Drawing.Point(43, 120);
+            this.DataGridListar.Name = "DataGridListar";
+            this.DataGridListar.ReadOnly = true;
+            this.DataGridListar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataGridListar.RowHeadersVisible = false;
+            this.DataGridListar.RowHeadersWidth = 50;
+            this.DataGridListar.Size = new System.Drawing.Size(595, 316);
+            this.DataGridListar.TabIndex = 73;
+            // 
+            // Correo
+            // 
+            this.Correo.HeaderText = "Correo";
+            this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            // 
+            // TipoUsuario
+            // 
+            this.TipoUsuario.HeaderText = "Tipo usuario";
+            this.TipoUsuario.Name = "TipoUsuario";
+            this.TipoUsuario.ReadOnly = true;
+            // 
+            // BotonListarUsuarios
+            // 
+            this.BotonListarUsuarios.BackColor = System.Drawing.Color.Tomato;
+            this.BotonListarUsuarios.FlatAppearance.BorderSize = 0;
+            this.BotonListarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BotonListarUsuarios.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BotonListarUsuarios.Location = new System.Drawing.Point(529, 445);
+            this.BotonListarUsuarios.Name = "BotonListarUsuarios";
+            this.BotonListarUsuarios.Size = new System.Drawing.Size(122, 38);
+            this.BotonListarUsuarios.TabIndex = 71;
+            this.BotonListarUsuarios.Text = "Listar";
+            this.BotonListarUsuarios.UseVisualStyleBackColor = false;
+            this.BotonListarUsuarios.Click += new System.EventHandler(this.BotonListarUsuarios_Click);
             // 
             // label48
             // 
@@ -1310,14 +1389,6 @@ namespace Veterinaria
             this.label48.Size = new System.Drawing.Size(247, 27);
             this.label48.TabIndex = 70;
             this.label48.Text = "Listado de usuarios";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 84);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(655, 318);
-            this.dataGridView1.TabIndex = 69;
             // 
             // MenuUsuarios
             // 
@@ -1332,8 +1403,8 @@ namespace Veterinaria
             this.Name = "MenuUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuUsuarios";
-            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.TabuladorABC.ResumeLayout(false);
             this.PestañaAgregar.ResumeLayout(false);
             this.PestañaAgregar.PerformLayout();
@@ -1345,7 +1416,7 @@ namespace Veterinaria
             this.PestañaEliminar.PerformLayout();
             this.PestañaListar.ResumeLayout(false);
             this.PestañaListar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridListar)).EndInit();
             this.ResumeLayout(false);
 
 		}
@@ -1367,13 +1438,11 @@ namespace Veterinaria
         private System.Windows.Forms.TabPage PestañaConsultar;
         private System.Windows.Forms.TabPage PestañaAgregar;
         private System.Windows.Forms.TabPage PestañaModificar;
-        private System.Windows.Forms.TabPage PestañaEliminar;
         private System.Windows.Forms.TabPage PestañaListar;
-        private System.Windows.Forms.TextBox TextBoxAgregarEstatura;
-        private System.Windows.Forms.TextBox TextBoxAgregarPeso;
-        private System.Windows.Forms.TextBox TextBoxAgregarEdad;
-        private System.Windows.Forms.TextBox TextBoxAgregarRaza;
-        private System.Windows.Forms.TextBox TextBoxAgregarEspecie;
+        private System.Windows.Forms.TextBox TextBoxAgregarFechaContrato;
+        private System.Windows.Forms.TextBox TextBoxAgregarTelefono;
+        private System.Windows.Forms.TextBox TextBoxAgregarApeMaterno;
+        private System.Windows.Forms.TextBox TextBoxAgregarApePaterno;
         private System.Windows.Forms.TextBox TextBoxAgregarNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button ButtonLimpiarDeAgregar;
@@ -1384,8 +1453,8 @@ namespace Veterinaria
         private System.Windows.Forms.Label LabelAgregarRaza;
         private System.Windows.Forms.Label LabelAgregarEspecie;
         private System.Windows.Forms.Label LabelAgregarNombre;
-        private System.Windows.Forms.TextBox TextBoxAgregarEnfermedad;
-        private System.Windows.Forms.TextBox TextBoxAgregarDueño;
+        private System.Windows.Forms.TextBox TextBoxAgregarContrasenia;
+        private System.Windows.Forms.TextBox TextBoxAgregarCorreoElectronico;
         private System.Windows.Forms.Label LabelAgregarEnfermedad;
         private System.Windows.Forms.Label LabelAgregarNombreDuenio;
         private System.Windows.Forms.Label label1;
@@ -1397,49 +1466,50 @@ namespace Veterinaria
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button ButtonBuscarDeConsultar;
-        private System.Windows.Forms.TextBox TextBoxConsultaID;
+        private System.Windows.Forms.TextBox TextBoxConsultaCorreo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label LabelContraConsultar;
+        private System.Windows.Forms.Label LabelCorreoElecConsultar;
+        private System.Windows.Forms.Label LabelTipoUsConsultar;
+        private System.Windows.Forms.Label LabelFeContConsultar;
+        private System.Windows.Forms.Label LabelTelefConsultar;
+        private System.Windows.Forms.Label LabelConsultarNombre;
+        private System.Windows.Forms.Label LabelApePatConsultar;
+        private System.Windows.Forms.Label LabelApeMatConsultar;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BotonConsultaMod;
+        private System.Windows.Forms.TextBox TextBoxCorreoMod;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TextBoxContraMod;
+        private System.Windows.Forms.TextBox TextBoxFeContMod;
+        private System.Windows.Forms.TextBox TextBoxTelefMod;
+        private System.Windows.Forms.TextBox TextBoxApeMatMod;
+        private System.Windows.Forms.TextBox TextBoxApePatMod;
+        private System.Windows.Forms.TextBox TextBoxNomMod;
         private System.Windows.Forms.Button ButtonActualizar;
         private System.Windows.Forms.Button ButtonLimpiarDeModificar;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Button BotonListarUsuarios;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.TabPage PestañaEliminar;
+        private System.Windows.Forms.Label LabelEliminarContras;
+        private System.Windows.Forms.Label LabelEliminarTipoUs;
+        private System.Windows.Forms.Label LabelEliminarCorreo;
+        private System.Windows.Forms.Label LabelEliminarFeCont;
+        private System.Windows.Forms.Label LabelEliminarApeMat;
+        private System.Windows.Forms.Label LabelEliminarTel;
+        private System.Windows.Forms.Label LabelEliminarApePat;
+        private System.Windows.Forms.Label LabelEliminarNombre;
+        private System.Windows.Forms.Button ButtonBorrar;
+        private System.Windows.Forms.Button BotonConsultarElim;
+        private System.Windows.Forms.TextBox TextBoxEliminarCons;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
@@ -1450,9 +1520,11 @@ namespace Veterinaria
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Button ButtonBorrar;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private ns1.BunifuCustomDataGrid DataGridListar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TipoUsuario;
+        private System.Windows.Forms.ComboBox TextBoxAgregarTipoUsuario;
+        private System.Windows.Forms.ComboBox TextBoxTipoUsuMod;
     }
 }
