@@ -199,7 +199,7 @@ namespace Veterinaria
                           + mascota.damePeso() + "', '"
                           + mascota.dameEstatura() + "', '"
                           + mascota.dameNombreDuenio() + "');";
-            MessageBox.Show(query);
+
             try
             {
                 obtenerResultadoDelQuery(query).Close();

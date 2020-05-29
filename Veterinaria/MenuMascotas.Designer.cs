@@ -55,7 +55,6 @@ namespace Veterinaria
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox TextBoxConsultaID;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label LabelConsultaEspecie;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label7;
@@ -197,7 +196,6 @@ namespace Veterinaria
             this.LabelConsultaEspecie = new System.Windows.Forms.Label();
             this.TextBoxConsultaID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -507,6 +505,7 @@ namespace Veterinaria
             this.TextBoxAgregarEnfermedad.Name = "TextBoxAgregarEnfermedad";
             this.TextBoxAgregarEnfermedad.Size = new System.Drawing.Size(248, 26);
             this.TextBoxAgregarEnfermedad.TabIndex = 16;
+            this.TextBoxAgregarEnfermedad.Visible = false;
             // 
             // TextBoxAgregarDueño
             // 
@@ -602,6 +601,7 @@ namespace Veterinaria
             this.label1.TabIndex = 7;
             this.label1.Text = "                                  \r\n\r\n\r\n\r\n                           Aqui va la f" +
     "oto";
+            this.label1.Visible = false;
             // 
             // LabelAgregarFoto
             // 
@@ -611,6 +611,7 @@ namespace Veterinaria
             this.LabelAgregarFoto.Size = new System.Drawing.Size(43, 18);
             this.LabelAgregarFoto.TabIndex = 2;
             this.LabelAgregarFoto.Text = "Foto:";
+            this.LabelAgregarFoto.Visible = false;
             // 
             // LabelAgregarEnfermedad
             // 
@@ -620,6 +621,7 @@ namespace Veterinaria
             this.LabelAgregarEnfermedad.Size = new System.Drawing.Size(102, 18);
             this.LabelAgregarEnfermedad.TabIndex = 2;
             this.LabelAgregarEnfermedad.Text = "Enfermedad:";
+            this.LabelAgregarEnfermedad.Visible = false;
             // 
             // LabelAgregarNombreDuenio
             // 
@@ -701,7 +703,6 @@ namespace Veterinaria
             this.PestañaConsultar.Controls.Add(this.LabelConsultaEspecie);
             this.PestañaConsultar.Controls.Add(this.TextBoxConsultaID);
             this.PestañaConsultar.Controls.Add(this.label3);
-            this.PestañaConsultar.Controls.Add(this.label4);
             this.PestañaConsultar.Controls.Add(this.label6);
             this.PestañaConsultar.Controls.Add(this.label7);
             this.PestañaConsultar.Controls.Add(this.label8);
@@ -761,11 +762,12 @@ namespace Veterinaria
             // LabelConsultaEnfermedad
             // 
             this.LabelConsultaEnfermedad.AutoSize = true;
-            this.LabelConsultaEnfermedad.Location = new System.Drawing.Point(515, 229);
+            this.LabelConsultaEnfermedad.Location = new System.Drawing.Point(515, 306);
             this.LabelConsultaEnfermedad.Name = "LabelConsultaEnfermedad";
             this.LabelConsultaEnfermedad.Size = new System.Drawing.Size(20, 18);
             this.LabelConsultaEnfermedad.TabIndex = 42;
             this.LabelConsultaEnfermedad.Text = "...";
+            this.LabelConsultaEnfermedad.Visible = false;
             // 
             // LabelConsultaDuenio
             // 
@@ -824,7 +826,7 @@ namespace Veterinaria
             // LabelConsultaEspecie
             // 
             this.LabelConsultaEspecie.AutoSize = true;
-            this.LabelConsultaEspecie.Location = new System.Drawing.Point(461, 274);
+            this.LabelConsultaEspecie.Location = new System.Drawing.Point(461, 229);
             this.LabelConsultaEspecie.Name = "LabelConsultaEspecie";
             this.LabelConsultaEspecie.Size = new System.Drawing.Size(20, 18);
             this.LabelConsultaEspecie.TabIndex = 36;
@@ -848,22 +850,15 @@ namespace Veterinaria
             this.label3.TabIndex = 28;
             this.label3.Text = "Ingrese el ID de la mascota";
             // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(477, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 133);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "                                  \r\n\r\n\r\n                    Aqui va la foto";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(385, 229);
+            this.label6.Location = new System.Drawing.Point(385, 306);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(102, 18);
             this.label6.TabIndex = 23;
             this.label6.Text = "Enfermedad:";
+            this.label6.Visible = false;
             // 
             // label7
             // 
@@ -922,7 +917,7 @@ namespace Veterinaria
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(385, 274);
+            this.label12.Location = new System.Drawing.Point(385, 229);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(70, 18);
             this.label12.TabIndex = 25;
@@ -1039,6 +1034,7 @@ namespace Veterinaria
             this.TextBoxEnfermedadModificar.Name = "TextBoxEnfermedadModificar";
             this.TextBoxEnfermedadModificar.Size = new System.Drawing.Size(248, 26);
             this.TextBoxEnfermedadModificar.TabIndex = 66;
+            this.TextBoxEnfermedadModificar.Visible = false;
             // 
             // TextBoxNombreDuenioModificar
             // 
@@ -1118,6 +1114,7 @@ namespace Veterinaria
             this.label23.Size = new System.Drawing.Size(102, 18);
             this.label23.TabIndex = 54;
             this.label23.Text = "Enfermedad:";
+            this.label23.Visible = false;
             // 
             // label24
             // 
@@ -1302,6 +1299,7 @@ namespace Veterinaria
             this.LabelEliminarEnfermedad.Size = new System.Drawing.Size(20, 18);
             this.LabelEliminarEnfermedad.TabIndex = 65;
             this.LabelEliminarEnfermedad.Text = "...";
+            this.LabelEliminarEnfermedad.Visible = false;
             // 
             // LabelEliminarNombreDuenio
             // 
@@ -1365,6 +1363,7 @@ namespace Veterinaria
             this.label40.Size = new System.Drawing.Size(102, 18);
             this.label40.TabIndex = 57;
             this.label40.Text = "Enfermedad:";
+            this.label40.Visible = false;
             // 
             // label41
             // 

@@ -141,15 +141,23 @@ namespace Veterinaria
             AdminUsuario adminUsuario = new AdminUsuario();
             Usuario usuario = new Usuario();
             String correo = TextBoxConsultaCorreo.Text;
-            usuario = adminUsuario.consultarUsuario(correo);
-            LabelConsultarNombre.Text = usuario.dameNombre();
-            LabelApePatConsultar.Text = usuario.dameApellidoPaterno();
-            LabelApeMatConsultar.Text = usuario.dameApellidoMaterno();
-            LabelTelefConsultar.Text = usuario.dameTelefono();
-            LabelFeContConsultar.Text = usuario.dameFechaContrato();
-            LabelTipoUsConsultar.Text = usuario.dameTipoUsuario();
-            LabelCorreoElecConsultar.Text = usuario.dameCorreoElectronico();
-            LabelContraConsultar.Text = usuario.dameContrasenia();
+            if(adminUsuario.existeUsuario(correo))
+            {
+                usuario = adminUsuario.consultarUsuario(correo);
+                LabelConsultarNombre.Text = usuario.dameNombre();
+                LabelApePatConsultar.Text = usuario.dameApellidoPaterno();
+                LabelApeMatConsultar.Text = usuario.dameApellidoMaterno();
+                LabelTelefConsultar.Text = usuario.dameTelefono();
+                LabelFeContConsultar.Text = usuario.dameFechaContrato();
+                LabelTipoUsConsultar.Text = usuario.dameTipoUsuario();
+                LabelCorreoElecConsultar.Text = usuario.dameCorreoElectronico();
+                LabelContraConsultar.Text = usuario.dameContrasenia();
+            }
+            else
+            {
+                MessageBox.Show("No se enctró el usuario");
+            }
+            
         }
 
         private void BotonConsultaMod_Click(object sender, EventArgs e)
@@ -157,14 +165,22 @@ namespace Veterinaria
             AdminUsuario adminUsuario = new AdminUsuario();
             Usuario controlarUsuario = new Usuario();
             String correo = TextBoxCorreoMod.Text;
-            controlarUsuario = adminUsuario.consultarUsuario(correo);
-            TextBoxNomMod.Text = controlarUsuario.dameNombre();
-            TextBoxApePatMod.Text = controlarUsuario.dameApellidoPaterno();
-            TextBoxApeMatMod.Text = controlarUsuario.dameApellidoMaterno();
-            TextBoxTelefMod.Text = controlarUsuario.dameTelefono();
-            TextBoxFeContMod.Text = controlarUsuario.dameFechaContrato();
-            TextBoxTipoUsuMod.Text = controlarUsuario.dameTipoUsuario();
-            TextBoxContraMod.Text = controlarUsuario.dameContrasenia();
+            if(adminUsuario.existeUsuario(correo))
+            {
+                controlarUsuario = adminUsuario.consultarUsuario(correo);
+                TextBoxNomMod.Text = controlarUsuario.dameNombre();
+                TextBoxApePatMod.Text = controlarUsuario.dameApellidoPaterno();
+                TextBoxApeMatMod.Text = controlarUsuario.dameApellidoMaterno();
+                TextBoxTelefMod.Text = controlarUsuario.dameTelefono();
+                TextBoxFeContMod.Text = controlarUsuario.dameFechaContrato();
+                TextBoxTipoUsuMod.Text = controlarUsuario.dameTipoUsuario();
+                TextBoxContraMod.Text = controlarUsuario.dameContrasenia();
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el usuario");
+            }
+            
         }
 
         private void ButtonActualizar_Click(object sender, EventArgs e)

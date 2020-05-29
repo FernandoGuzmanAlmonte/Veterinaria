@@ -78,3 +78,43 @@ C:\Users\Galmonte\Desktop\Nueva carpeta (3)\Veterinaria\Veterinaria\bin\Debug\Ub
 C:\Users\Galmonte\Desktop\Nueva carpeta (3)\Veterinaria\Veterinaria\bin\Debug\Renci.SshNet.dll
 C:\Users\Galmonte\Desktop\Nueva carpeta (3)\Veterinaria\Veterinaria\bin\Debug\MySql.Data.xml
 C:\Users\Galmonte\Desktop\Nueva carpeta (3)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CopyComplete
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\MySql.Data.dll
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\Google.Protobuf.dll
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\Renci.SshNet.dll
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\bin\Debug\MySql.Data.xml
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.InicioDeSesion.resources
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MainForm.resources
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuMascotas.resources
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuUsuarios.resources
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CopyComplete
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Galmonte\Desktop\Nueva carpeta (2)\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe.config
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\Veterinaria.exe
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\Veterinaria.pdb
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\MySql.Data.dll
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\Google.Protobuf.dll
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\Renci.SshNet.dll
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\bin\Debug\MySql.Data.xml
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csprojAssemblyReference.cache
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.InicioDeSesion.resources
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MainForm.resources
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuMascotas.resources
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.MenuUsuarios.resources
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.Properties.Resources.resources
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.GenerateResource.cache
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CoreCompileInputs.cache
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.csproj.CopyComplete
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.exe
+C:\Users\Galmonte\Desktop\Fernando\Escuela\2020A\INGENIERIA DE SOFTWARE II\PROYECTO\Software\Veterinaria\Veterinaria\obj\Debug\Veterinaria.pdb

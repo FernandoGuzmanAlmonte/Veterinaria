@@ -148,7 +148,6 @@ namespace Veterinaria
                 nombreDuenio.Length > 3)
             {
                 AdminMascotas adminMascota = new AdminMascotas();
-                MessageBox.Show(nombre+especie+raza+edad+peso+estatura+nombreDuenio);
                 if (adminMascota.agregarMascota(nombre, especie, raza, edad, peso, estatura,
                     nombreDuenio))
                 {
@@ -190,14 +189,22 @@ namespace Veterinaria
             AdminMascotas adminMascotas = new AdminMascotas();
             Mascota mascota = new Mascota();
             String id = TextBoxConsultaID.Text;
-            mascota = adminMascotas.consultarMascota(id);
-            LabelConsultaEspecie.Text = mascota.dameEspecie();
-            LabelConsultaRaza.Text = mascota.dameRaza();
-            LabelConsultaEdad.Text = mascota.dameEdad().ToString();
-            LabelConsultaPeso.Text = mascota.damePeso().ToString();
-            LabelConsultaEstatura.Text = mascota.dameEstatura().ToString();
-            LabelConsultaDuenio.Text = mascota.dameNombreDuenio();
-            label51.Text = mascota.dameNombre();
+            if(adminMascotas.existeMascota(id))
+            {
+                mascota = adminMascotas.consultarMascota(id);
+                LabelConsultaEspecie.Text = mascota.dameEspecie();
+                LabelConsultaRaza.Text = mascota.dameRaza();
+                LabelConsultaEdad.Text = mascota.dameEdad().ToString();
+                LabelConsultaPeso.Text = mascota.damePeso().ToString();
+                LabelConsultaEstatura.Text = mascota.dameEstatura().ToString();
+                LabelConsultaDuenio.Text = mascota.dameNombreDuenio();
+                label51.Text = mascota.dameNombre();
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el registro");
+            }
+            
             //LabelConsultaEnfermedad.Text = "Peditos Fuertes";                         PIDU QUIERE PONER LA PEDORRERA Y YO DIGO QUE NO
         }
 
@@ -206,14 +213,22 @@ namespace Veterinaria
             AdminMascotas adminMascota = new AdminMascotas();
             Mascota mascota = new Mascota();
             String id = TextBoxIDModificar.Text;
-            mascota = adminMascota.consultarMascota(id);
-            textBoxNombre.Text = mascota.dameNombre();
-            TextBoxEspecieModificar.Text = mascota.dameEspecie();
-            TextBoxRazaModificar.Text = mascota.dameRaza();
-            TextBoxEdadModificar.Text = mascota.dameEdad().ToString();
-            TextBoxPesoModificar.Text = mascota.damePeso().ToString();
-            TextBoxEstaturaModificar.Text = mascota.dameEstatura().ToString();
-            TextBoxNombreDuenioModificar.Text = mascota.dameNombreDuenio().ToString();
+            if(adminMascota.existeMascota(id))
+            {
+                mascota = adminMascota.consultarMascota(id);
+                textBoxNombre.Text = mascota.dameNombre();
+                TextBoxEspecieModificar.Text = mascota.dameEspecie();
+                TextBoxRazaModificar.Text = mascota.dameRaza();
+                TextBoxEdadModificar.Text = mascota.dameEdad().ToString();
+                TextBoxPesoModificar.Text = mascota.damePeso().ToString();
+                TextBoxEstaturaModificar.Text = mascota.dameEstatura().ToString();
+                TextBoxNombreDuenioModificar.Text = mascota.dameNombreDuenio().ToString();
+            }
+            else
+            {
+                MessageBox.Show("No se encontró la mascota");
+            }
+            
             //TextBoxEnfermedadModificar.Text = "Peditos Olorosos";                     PIDU QUIERE PONER LA PEDORRERA Y YO DIGO QUE NO
         }
 
@@ -229,9 +244,8 @@ namespace Veterinaria
             double peso = double.Parse(TextBoxPesoModificar.Text);
             double estatura = double.Parse(TextBoxEstaturaModificar.Text);
             String nombreDuenio = TextBoxNombreDuenioModificar.Text;
-            String enfermedad = TextBoxEnfermedadModificar.Text;
-            if (especie.Length > 2 && raza.Length > 2 && nombreDuenio.Length > 3 && 
-                enfermedad.Length > 4)
+            String enfermedad = "a";//TextBoxEnfermedadModificar.Text;
+            if (especie.Length > 2 && raza.Length > 2 && nombreDuenio.Length > 3)
             {
                 if (adminMascota.modificarMascota(id, nombre, especie, raza, edad, peso, estatura,
                     nombreDuenio))
@@ -330,6 +344,9 @@ namespace Veterinaria
                 });
             }
         }
+
+        
+    
         // LOGICA DE DATOS - FIN        
     }
 }
